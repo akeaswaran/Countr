@@ -7,13 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		751C5AA01AF3D10C0078A871 /* EditCountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751C5A9E1AF3D10C0078A871 /* EditCountdownViewController.m */; };
+		751C5AA11AF3D10C0078A871 /* EditCountdownViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751C5A9F1AF3D10C0078A871 /* EditCountdownViewController.xib */; };
 		758448531AF1C3840063EBBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 758448521AF1C3840063EBBF /* main.m */; };
 		758448561AF1C3840063EBBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 758448551AF1C3840063EBBF /* AppDelegate.m */; };
 		758448591AF1C3840063EBBF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 758448581AF1C3840063EBBF /* ViewController.m */; };
-		7584485C1AF1C3840063EBBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7584485A1AF1C3840063EBBF /* Main.storyboard */; };
 		7584485E1AF1C3840063EBBF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7584485D1AF1C3840063EBBF /* Images.xcassets */; };
 		758448611AF1C3840063EBBF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7584485F1AF1C3840063EBBF /* LaunchScreen.xib */; };
 		7584486D1AF1C3840063EBBF /* CountdownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7584486C1AF1C3840063EBBF /* CountdownTests.m */; };
+		75DCC4CC1AFA5E6100CD1238 /* ColorSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DCC4CB1AFA5E6100CD1238 /* ColorSelectionViewController.m */; };
+		75EDAB331AF2757B00516F9E /* DateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDAB321AF2757B00516F9E /* DateHandler.m */; };
+		75EDAB371AF27BE300516F9E /* AddCountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDAB351AF27BE300516F9E /* AddCountdownViewController.m */; };
+		75EDAB3A1AF27E4B00516F9E /* AddCountdownViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75EDAB391AF27E4B00516F9E /* AddCountdownViewController.xib */; };
+		75EDAB3E1AF2B6A400516F9E /* CountdownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDAB3C1AF2B6A400516F9E /* CountdownCell.m */; };
+		75EDAB3F1AF2B6A400516F9E /* CountdownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75EDAB3D1AF2B6A400516F9E /* CountdownCell.xib */; };
+		75EDAB431AF2EDDE00516F9E /* CountdownDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDAB411AF2EDDE00516F9E /* CountdownDetailViewController.m */; };
+		75EDAB441AF2EDDE00516F9E /* CountdownDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75EDAB421AF2EDDE00516F9E /* CountdownDetailViewController.xib */; };
+		75EDAB471AF2FD4600516F9E /* UILabel+WhiteUIDatePickerLabels.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDAB461AF2FD4600516F9E /* UILabel+WhiteUIDatePickerLabels.m */; };
+		75EDAB4B1AF30DC900516F9E /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDAB491AF30DC900516F9E /* SettingsViewController.m */; };
+		75EDAB4C1AF30DC900516F9E /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75EDAB4A1AF30DC900516F9E /* SettingsViewController.xib */; };
+		75EDAB4F1AF310FC00516F9E /* gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75EDAB4D1AF310FC00516F9E /* gear@2x.png */; };
+		75EDAB501AF310FC00516F9E /* gear@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75EDAB4E1AF310FC00516F9E /* gear@3x.png */; };
+		75EDAB561AF31A6B00516F9E /* CDIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75EDAB511AF31A6B00516F9E /* CDIcon@2x.png */; };
+		75EDAB571AF31A6B00516F9E /* CDIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75EDAB521AF31A6B00516F9E /* CDIcon@3x.png */; };
+		75EDAB581AF31A6B00516F9E /* CDIcon58.png in Resources */ = {isa = PBXBuildFile; fileRef = 75EDAB531AF31A6B00516F9E /* CDIcon58.png */; };
+		75EDAB591AF31A6B00516F9E /* CDIcon80.png in Resources */ = {isa = PBXBuildFile; fileRef = 75EDAB541AF31A6B00516F9E /* CDIcon80.png */; };
+		75EDAB5A1AF31A6B00516F9E /* CDIcon87.png in Resources */ = {isa = PBXBuildFile; fileRef = 75EDAB551AF31A6B00516F9E /* CDIcon87.png */; };
+		90BEE0EB38757BCF0C6DCC46 /* libPods-Countdown.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A3976B9D7D6A941599C74A /* libPods-Countdown.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41C379EA19B41E5C6E57B2B3 /* Pods-Countdown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countdown.release.xcconfig"; path = "Pods/Target Support Files/Pods-Countdown/Pods-Countdown.release.xcconfig"; sourceTree = "<group>"; };
+		751C5A9D1AF3D10C0078A871 /* EditCountdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCountdownViewController.h; sourceTree = "<group>"; };
+		751C5A9E1AF3D10C0078A871 /* EditCountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCountdownViewController.m; sourceTree = "<group>"; };
+		751C5A9F1AF3D10C0078A871 /* EditCountdownViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditCountdownViewController.xib; sourceTree = "<group>"; };
 		7584484D1AF1C3840063EBBF /* Countdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		758448511AF1C3840063EBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		758448521AF1C3840063EBBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -34,12 +58,38 @@
 		758448551AF1C3840063EBBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		758448571AF1C3840063EBBF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		758448581AF1C3840063EBBF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7584485B1AF1C3840063EBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7584485D1AF1C3840063EBBF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		758448601AF1C3840063EBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		758448661AF1C3840063EBBF /* CountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7584486B1AF1C3840063EBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7584486C1AF1C3840063EBBF /* CountdownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountdownTests.m; sourceTree = "<group>"; };
+		75DCC4CA1AFA5E6100CD1238 /* ColorSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorSelectionViewController.h; sourceTree = "<group>"; };
+		75DCC4CB1AFA5E6100CD1238 /* ColorSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorSelectionViewController.m; sourceTree = "<group>"; };
+		75EDAB311AF2757B00516F9E /* DateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateHandler.h; sourceTree = "<group>"; };
+		75EDAB321AF2757B00516F9E /* DateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateHandler.m; sourceTree = "<group>"; };
+		75EDAB341AF27BE300516F9E /* AddCountdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCountdownViewController.h; sourceTree = "<group>"; };
+		75EDAB351AF27BE300516F9E /* AddCountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCountdownViewController.m; sourceTree = "<group>"; };
+		75EDAB391AF27E4B00516F9E /* AddCountdownViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCountdownViewController.xib; sourceTree = "<group>"; };
+		75EDAB3B1AF2B6A400516F9E /* CountdownCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownCell.h; sourceTree = "<group>"; };
+		75EDAB3C1AF2B6A400516F9E /* CountdownCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownCell.m; sourceTree = "<group>"; };
+		75EDAB3D1AF2B6A400516F9E /* CountdownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountdownCell.xib; sourceTree = "<group>"; };
+		75EDAB401AF2EDDE00516F9E /* CountdownDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownDetailViewController.h; sourceTree = "<group>"; };
+		75EDAB411AF2EDDE00516F9E /* CountdownDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownDetailViewController.m; sourceTree = "<group>"; };
+		75EDAB421AF2EDDE00516F9E /* CountdownDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountdownDetailViewController.xib; sourceTree = "<group>"; };
+		75EDAB451AF2FD4600516F9E /* UILabel+WhiteUIDatePickerLabels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+WhiteUIDatePickerLabels.h"; sourceTree = "<group>"; };
+		75EDAB461AF2FD4600516F9E /* UILabel+WhiteUIDatePickerLabels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+WhiteUIDatePickerLabels.m"; sourceTree = "<group>"; };
+		75EDAB481AF30DC900516F9E /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		75EDAB491AF30DC900516F9E /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		75EDAB4A1AF30DC900516F9E /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		75EDAB4D1AF310FC00516F9E /* gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear@2x.png"; sourceTree = "<group>"; };
+		75EDAB4E1AF310FC00516F9E /* gear@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear@3x.png"; sourceTree = "<group>"; };
+		75EDAB511AF31A6B00516F9E /* CDIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CDIcon@2x.png"; sourceTree = "<group>"; };
+		75EDAB521AF31A6B00516F9E /* CDIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CDIcon@3x.png"; sourceTree = "<group>"; };
+		75EDAB531AF31A6B00516F9E /* CDIcon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CDIcon58.png; sourceTree = "<group>"; };
+		75EDAB541AF31A6B00516F9E /* CDIcon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CDIcon80.png; sourceTree = "<group>"; };
+		75EDAB551AF31A6B00516F9E /* CDIcon87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CDIcon87.png; sourceTree = "<group>"; };
+		B20007275641FD4894EB96EB /* Pods-Countdown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countdown.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Countdown/Pods-Countdown.debug.xcconfig"; sourceTree = "<group>"; };
+		D8A3976B9D7D6A941599C74A /* libPods-Countdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Countdown.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90BEE0EB38757BCF0C6DCC46 /* libPods-Countdown.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +111,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03B3819E16EC9EAB4C63205D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B20007275641FD4894EB96EB /* Pods-Countdown.debug.xcconfig */,
+				41C379EA19B41E5C6E57B2B3 /* Pods-Countdown.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		758448441AF1C3840063EBBF = {
 			isa = PBXGroup;
 			children = (
 				7584484F1AF1C3840063EBBF /* Countdown */,
 				758448691AF1C3840063EBBF /* CountdownTests */,
 				7584484E1AF1C3840063EBBF /* Products */,
+				03B3819E16EC9EAB4C63205D /* Pods */,
+				F0DE5BC9A96684146647012C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,7 +147,34 @@
 				758448551AF1C3840063EBBF /* AppDelegate.m */,
 				758448571AF1C3840063EBBF /* ViewController.h */,
 				758448581AF1C3840063EBBF /* ViewController.m */,
-				7584485A1AF1C3840063EBBF /* Main.storyboard */,
+				75EDAB401AF2EDDE00516F9E /* CountdownDetailViewController.h */,
+				75EDAB411AF2EDDE00516F9E /* CountdownDetailViewController.m */,
+				75EDAB421AF2EDDE00516F9E /* CountdownDetailViewController.xib */,
+				75EDAB3B1AF2B6A400516F9E /* CountdownCell.h */,
+				75EDAB3C1AF2B6A400516F9E /* CountdownCell.m */,
+				75EDAB3D1AF2B6A400516F9E /* CountdownCell.xib */,
+				75EDAB341AF27BE300516F9E /* AddCountdownViewController.h */,
+				75EDAB351AF27BE300516F9E /* AddCountdownViewController.m */,
+				75EDAB391AF27E4B00516F9E /* AddCountdownViewController.xib */,
+				751C5A9D1AF3D10C0078A871 /* EditCountdownViewController.h */,
+				751C5A9E1AF3D10C0078A871 /* EditCountdownViewController.m */,
+				751C5A9F1AF3D10C0078A871 /* EditCountdownViewController.xib */,
+				75EDAB311AF2757B00516F9E /* DateHandler.h */,
+				75EDAB321AF2757B00516F9E /* DateHandler.m */,
+				75EDAB451AF2FD4600516F9E /* UILabel+WhiteUIDatePickerLabels.h */,
+				75EDAB461AF2FD4600516F9E /* UILabel+WhiteUIDatePickerLabels.m */,
+				75EDAB481AF30DC900516F9E /* SettingsViewController.h */,
+				75EDAB491AF30DC900516F9E /* SettingsViewController.m */,
+				75EDAB4A1AF30DC900516F9E /* SettingsViewController.xib */,
+				75DCC4CA1AFA5E6100CD1238 /* ColorSelectionViewController.h */,
+				75DCC4CB1AFA5E6100CD1238 /* ColorSelectionViewController.m */,
+				75EDAB4D1AF310FC00516F9E /* gear@2x.png */,
+				75EDAB4E1AF310FC00516F9E /* gear@3x.png */,
+				75EDAB511AF31A6B00516F9E /* CDIcon@2x.png */,
+				75EDAB521AF31A6B00516F9E /* CDIcon@3x.png */,
+				75EDAB531AF31A6B00516F9E /* CDIcon58.png */,
+				75EDAB541AF31A6B00516F9E /* CDIcon80.png */,
+				75EDAB551AF31A6B00516F9E /* CDIcon87.png */,
 				7584485D1AF1C3840063EBBF /* Images.xcassets */,
 				7584485F1AF1C3840063EBBF /* LaunchScreen.xib */,
 				758448501AF1C3840063EBBF /* Supporting Files */,
@@ -119,6 +208,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F0DE5BC9A96684146647012C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8A3976B9D7D6A941599C74A /* libPods-Countdown.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 758448701AF1C3840063EBBF /* Build configuration list for PBXNativeTarget "Countdown" */;
 			buildPhases = (
+				8346A68388EA5F1B192B492F /* Check Pods Manifest.lock */,
 				758448491AF1C3840063EBBF /* Sources */,
 				7584484A1AF1C3840063EBBF /* Frameworks */,
 				7584484B1AF1C3840063EBBF /* Resources */,
+				F4D72EC996B580F9C7B6667B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,9 +298,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7584485C1AF1C3840063EBBF /* Main.storyboard in Resources */,
+				75EDAB561AF31A6B00516F9E /* CDIcon@2x.png in Resources */,
+				75EDAB501AF310FC00516F9E /* gear@3x.png in Resources */,
 				758448611AF1C3840063EBBF /* LaunchScreen.xib in Resources */,
+				75EDAB4F1AF310FC00516F9E /* gear@2x.png in Resources */,
+				75EDAB4C1AF30DC900516F9E /* SettingsViewController.xib in Resources */,
 				7584485E1AF1C3840063EBBF /* Images.xcassets in Resources */,
+				751C5AA11AF3D10C0078A871 /* EditCountdownViewController.xib in Resources */,
+				75EDAB441AF2EDDE00516F9E /* CountdownDetailViewController.xib in Resources */,
+				75EDAB5A1AF31A6B00516F9E /* CDIcon87.png in Resources */,
+				75EDAB591AF31A6B00516F9E /* CDIcon80.png in Resources */,
+				75EDAB581AF31A6B00516F9E /* CDIcon58.png in Resources */,
+				75EDAB571AF31A6B00516F9E /* CDIcon@3x.png in Resources */,
+				75EDAB3A1AF27E4B00516F9E /* AddCountdownViewController.xib in Resources */,
+				75EDAB3F1AF2B6A400516F9E /* CountdownCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,14 +324,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8346A68388EA5F1B192B492F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4D72EC996B580F9C7B6667B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Countdown/Pods-Countdown-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		758448491AF1C3840063EBBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75EDAB331AF2757B00516F9E /* DateHandler.m in Sources */,
+				75EDAB471AF2FD4600516F9E /* UILabel+WhiteUIDatePickerLabels.m in Sources */,
+				751C5AA01AF3D10C0078A871 /* EditCountdownViewController.m in Sources */,
+				75EDAB431AF2EDDE00516F9E /* CountdownDetailViewController.m in Sources */,
+				75EDAB4B1AF30DC900516F9E /* SettingsViewController.m in Sources */,
 				758448591AF1C3840063EBBF /* ViewController.m in Sources */,
+				75DCC4CC1AFA5E6100CD1238 /* ColorSelectionViewController.m in Sources */,
+				75EDAB371AF27BE300516F9E /* AddCountdownViewController.m in Sources */,
 				758448561AF1C3840063EBBF /* AppDelegate.m in Sources */,
 				758448531AF1C3840063EBBF /* main.m in Sources */,
+				75EDAB3E1AF2B6A400516F9E /* CountdownCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +395,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7584485A1AF1C3840063EBBF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7584485B1AF1C3840063EBBF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7584485F1AF1C3840063EBBF /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -345,9 +488,11 @@
 		};
 		758448711AF1C3840063EBBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B20007275641FD4894EB96EB /* Pods-Countdown.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Countdown/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -355,9 +500,11 @@
 		};
 		758448721AF1C3840063EBBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41C379EA19B41E5C6E57B2B3 /* Pods-Countdown.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Countdown/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +563,7 @@
 				758448721AF1C3840063EBBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		758448731AF1C3840063EBBF /* Build configuration list for PBXNativeTarget "CountdownTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +572,7 @@
 				758448751AF1C3840063EBBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

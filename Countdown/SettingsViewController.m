@@ -416,7 +416,7 @@
             MFMailComposeViewController *composer = [[MFMailComposeViewController alloc] init];
             [composer setMailComposeDelegate:self];
             [composer setToRecipients:@[@"countrdevelopers@gmail.com"]];
-            [composer setSubject:[NSString stringWithFormat:@"Countr v%@ (%@)",[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"],[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]]];
+            [composer setSubject:[NSString stringWithFormat:@"Nimbus v%@ (%@)",[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"],[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]]];
             [self presentViewController:composer animated:YES completion:nil];
         }
     }

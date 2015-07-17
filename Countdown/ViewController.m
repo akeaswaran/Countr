@@ -37,7 +37,7 @@
     [self.view setBackgroundColor:mainColor];
     [self.tableView setSeparatorColor:complmentaryColor];
     
-    self.title = @"Countr";
+    self.title = @"Nimbus";
     self.tableView.estimatedRowHeight = 110;
     self.tableView.rowHeight = 110;
     

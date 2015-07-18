@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8121.17" systemVersion="15A215h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -27,6 +28,7 @@
         <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bouncesZoom="NO" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <animations/>
             <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="dataSource" destination="-1" id="Tng-2m-Rnh"/>
@@ -37,10 +39,12 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DAN-NV-f7p" id="EAa-ke-DMz">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Christmas, Graduation, etc." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WHx-r4-c7v">
                         <rect key="frame" x="82" y="7" width="223" height="30"/>
+                        <animations/>
                         <constraints>
                             <constraint firstAttribute="width" constant="223" id="8dr-gc-zcn"/>
                         </constraints>
@@ -49,11 +53,13 @@
                     </textField>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1do-D4-FbT">
                         <rect key="frame" x="15" y="7" width="59" height="30"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <animations/>
                 <constraints>
                     <constraint firstItem="1do-D4-FbT" firstAttribute="top" secondItem="EAa-ke-DMz" secondAttribute="topMargin" constant="-1" id="8C6-9H-T2A"/>
                     <constraint firstItem="WHx-r4-c7v" firstAttribute="top" secondItem="1do-D4-FbT" secondAttribute="top" id="CvT-mb-bGG"/>
@@ -64,21 +70,25 @@
                     <constraint firstItem="1do-D4-FbT" firstAttribute="leading" secondItem="EAa-ke-DMz" secondAttribute="leadingMargin" constant="7" id="jje-Kz-gZy"/>
                 </constraints>
             </tableViewCellContentView>
+            <animations/>
             <point key="canvasLocation" x="386" y="-467"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="IDX-KE-PfG">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IDX-KE-PfG" id="rDE-50-2QV">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHD-Nd-L6L">
                         <rect key="frame" x="8" y="8" width="304" height="27"/>
+                        <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" red="0.08235294118" green="0.37647058820000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <animations/>
                 <constraints>
                     <constraint firstItem="WHD-Nd-L6L" firstAttribute="leading" secondItem="rDE-50-2QV" secondAttribute="leadingMargin" id="Enh-DS-3zF"/>
                     <constraint firstItem="WHD-Nd-L6L" firstAttribute="centerX" secondItem="rDE-50-2QV" secondAttribute="centerX" id="SYN-ac-gkD"/>
@@ -86,16 +96,19 @@
                     <constraint firstItem="WHD-Nd-L6L" firstAttribute="top" secondItem="rDE-50-2QV" secondAttribute="topMargin" id="ydY-kY-uWM"/>
                 </constraints>
             </tableViewCellContentView>
+            <animations/>
             <point key="canvasLocation" x="386" y="-347"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="203" id="6dz-wj-wfc">
             <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6dz-wj-wfc" id="amW-8E-jR5">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Iuf-cM-7Jg">
+                    <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Iuf-cM-7Jg">
                         <rect key="frame" x="3" y="-13" width="314" height="162"/>
+                        <animations/>
                         <date key="date" timeIntervalSinceReferenceDate="452110707.08872402">
                             <!--2015-04-30 18:18:27 +0000-->
                         </date>
@@ -107,22 +120,26 @@
                         </connections>
                     </datePicker>
                 </subviews>
+                <animations/>
                 <constraints>
                     <constraint firstItem="Iuf-cM-7Jg" firstAttribute="leading" secondItem="amW-8E-jR5" secondAttribute="leadingMargin" constant="-5" id="KOm-FZ-ZT8"/>
                     <constraint firstItem="Iuf-cM-7Jg" firstAttribute="centerX" secondItem="amW-8E-jR5" secondAttribute="centerX" id="uBD-4K-YS2"/>
                     <constraint firstItem="Iuf-cM-7Jg" firstAttribute="top" secondItem="amW-8E-jR5" secondAttribute="top" constant="-13" id="xgA-n6-aH6"/>
                 </constraints>
             </tableViewCellContentView>
+            <animations/>
             <point key="canvasLocation" x="394" y="-130"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="203" id="SWq-6y-hD0">
             <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SWq-6y-hD0" id="bht-PC-qIc">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="nxP-dd-uxU">
+                    <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="nxP-dd-uxU">
                         <rect key="frame" x="3" y="-13" width="314" height="162"/>
+                        <animations/>
                         <date key="date" timeIntervalSinceReferenceDate="452110707.08872402">
                             <!--2015-04-30 18:18:27 +0000-->
                         </date>
@@ -131,27 +148,32 @@
                         </connections>
                     </datePicker>
                 </subviews>
+                <animations/>
                 <constraints>
                     <constraint firstItem="nxP-dd-uxU" firstAttribute="leading" secondItem="bht-PC-qIc" secondAttribute="leadingMargin" constant="-5" id="CEn-Iz-IZT"/>
                     <constraint firstItem="nxP-dd-uxU" firstAttribute="centerX" secondItem="bht-PC-qIc" secondAttribute="centerX" id="SHl-LX-uT2"/>
                     <constraint firstItem="nxP-dd-uxU" firstAttribute="top" secondItem="bht-PC-qIc" secondAttribute="top" constant="-13" id="bik-g8-bD5"/>
                 </constraints>
             </tableViewCellContentView>
+            <animations/>
             <point key="canvasLocation" x="783" y="-130"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="du4-2q-7u2">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="du4-2q-7u2" id="CQO-5b-Jwf">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0I-D9-o3s">
                         <rect key="frame" x="8" y="8" width="304" height="27"/>
+                        <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" red="0.08235294118" green="0.37647058820000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <animations/>
                 <constraints>
                     <constraint firstItem="w0I-D9-o3s" firstAttribute="leading" secondItem="CQO-5b-Jwf" secondAttribute="leadingMargin" id="M4V-dP-ldF"/>
                     <constraint firstItem="w0I-D9-o3s" firstAttribute="top" secondItem="CQO-5b-Jwf" secondAttribute="topMargin" id="NOA-Ew-e9N"/>
@@ -159,22 +181,27 @@
                     <constraint firstItem="w0I-D9-o3s" firstAttribute="bottom" secondItem="CQO-5b-Jwf" secondAttribute="bottomMargin" id="yfg-nP-Cpv"/>
                 </constraints>
             </tableViewCellContentView>
+            <animations/>
             <point key="canvasLocation" x="775" y="-347"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="225" id="40t-Pq-FAx">
             <rect key="frame" x="0.0" y="0.0" width="320" height="224"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="40t-Pq-FAx" id="MEd-ZP-ivY">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="223.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9P-zo-vMo" customClass="LPlaceholderTextView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="223"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
                 </subviews>
+                <animations/>
             </tableViewCellContentView>
+            <animations/>
             <point key="canvasLocation" x="324" y="861"/>
         </tableViewCell>
     </objects>

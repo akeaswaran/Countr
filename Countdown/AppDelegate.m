@@ -41,7 +41,8 @@
     
     [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [self.window setRootViewController:[[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] initWithStyle:UITableViewStylePlain]]];
+    _viewController = [[ViewController alloc] initWithStyle:UITableViewStylePlain];
+    [self.window setRootViewController:[[UINavigationController alloc] initWithRootViewController:_viewController]];
     
     [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil]];
     

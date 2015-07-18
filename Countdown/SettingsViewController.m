@@ -319,13 +319,13 @@
         if (!cell) {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"WebsiteCell"];
             [cell.textLabel setTextAlignment:NSTextAlignmentCenter];
-            [cell.textLabel setTextColor:contrastColor];
             cell.accessoryType = UITableViewCellAccessoryNone;
             
             cell.accessoryType = UITableViewCellAccessoryNone;
         }
         
         cell.backgroundColor = mainColor;
+        [cell.textLabel setTextColor:contrastColor];
         
         UIView *bgView = [[UIView alloc] initWithFrame:cell.bounds];
         [bgView setBackgroundColor:bgColor];

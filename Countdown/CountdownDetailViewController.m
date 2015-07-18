@@ -10,12 +10,14 @@
 
 #import "DateHandler.h"
 #import "EditCountdownViewController.h"
+#import "CountdownImageHeaderView.h"
 
 #import <DateTools.h>
 #import <LPlaceholderTextView.h>
 #import <Chameleon.h> 
+#import <UIScrollView+VGParallaxHeader.h>
 
-@interface CountdownDetailViewController () <UITextViewDelegate>
+@interface CountdownDetailViewController () <UITextViewDelegate,UIScrollViewDelegate>
 {
     NSDictionary *storedCountdown;
     NSTimer *timer;
@@ -31,6 +33,7 @@
     
     NSDateFormatter *dateFormatter;
     CGFloat heightForTitle;
+    CountdownImageHeaderView *headerView;
 }
 
 @property (strong, nonatomic) IBOutlet UILabel *generalTimeLabel;
@@ -81,6 +84,38 @@
     CGFloat titleHeight = countdownTitleLabel.frame.size.height;
     heightForTitle =  titleHeight + 13 + formattedDateLabel.frame.size.height;
     [self.tableView reloadData];
+    [self loadTableHeader];
+}
+
+-(void)loadTableHeader {
+    NSArray *imageFileNames = storedCountdown[@"images"];
+    if (imageFileNames && imageFileNames.count > 0) {
+        NSMutableArray *images = [NSMutableArray array];
+        for (NSString *fileName in imageFileNames) {
+            [images addObject:[self loadImageWithFileName:fileName]];
+        }
+        
+        headerView = [[CountdownImageHeaderView alloc] initWithImages:images size:CGSizeMake([UIScreen mainScreen].bounds.size.width, 200)];
+        
+        [self.tableView setParallaxHeaderView:headerView
+                                         mode:VGParallaxHeaderModeCenter
+                                       height:headerView.frame.size.height];
+        
+        [UIView animateWithDuration:1.0 animations:^{
+            headerView.alpha = 1.0;
+        }];
+    }
+}
+
+- (UIImage*)loadImageWithFileName:(NSString*)name
+{
+    NSLog(@"LOADING FILE W NAME: %@",name);
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString* path = [documentsDirectory stringByAppendingPathComponent:
+                      name];
+    UIImage* image = [UIImage imageWithContentsOfFile:path];
+    return image;
 }
 
 -(void)reloadCountdown {
@@ -89,6 +124,15 @@
     }
     
     [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0],[NSIndexPath indexPathForRow:0 inSection:1],[NSIndexPath indexPathForRow:0 inSection:2]] withRowAnimation:UITableViewRowAnimationNone];
+}
+
+#pragma mark - UIScrollView Delegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    NSArray *fileNames = storedCountdown[@"images"];
+    if (fileNames && fileNames.count > 0) {
+        [scrollView shouldPositionParallaxHeader];
+    }
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

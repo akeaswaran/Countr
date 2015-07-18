@@ -18,4 +18,6 @@ typedef void(^CDErrorCompletionBlock)(NSError *error);
 -(void)removeDateWithID:(NSString*)identifier;
 -(void)saveCountdown:(NSDictionary*)dateDict;
 -(NSString*)generateCountdownIdentifier:(NSInteger)length;
+-(NSString*)generateImageNameForCountdown:(NSDictionary*)countdown;
+-(void)removeImage:(NSString *)fileName;
 @end

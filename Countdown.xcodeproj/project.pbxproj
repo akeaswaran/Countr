@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7505307B1B59B36D0047A94E /* CountdownImageHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7505307A1B59B36D0047A94E /* CountdownImageHeaderView.m */; };
 		751C5AA01AF3D10C0078A871 /* EditCountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751C5A9E1AF3D10C0078A871 /* EditCountdownViewController.m */; };
 		751C5AA11AF3D10C0078A871 /* EditCountdownViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751C5A9F1AF3D10C0078A871 /* EditCountdownViewController.xib */; };
 		758448531AF1C3840063EBBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 758448521AF1C3840063EBBF /* main.m */; };
@@ -49,8 +48,6 @@
 
 /* Begin PBXFileReference section */
 		41C379EA19B41E5C6E57B2B3 /* Pods-Countdown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countdown.release.xcconfig"; path = "Pods/Target Support Files/Pods-Countdown/Pods-Countdown.release.xcconfig"; sourceTree = "<group>"; };
-		750530791B59B36D0047A94E /* CountdownImageHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownImageHeaderView.h; sourceTree = "<group>"; };
-		7505307A1B59B36D0047A94E /* CountdownImageHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownImageHeaderView.m; sourceTree = "<group>"; };
 		751C5A9D1AF3D10C0078A871 /* EditCountdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCountdownViewController.h; sourceTree = "<group>"; };
 		751C5A9E1AF3D10C0078A871 /* EditCountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCountdownViewController.m; sourceTree = "<group>"; };
 		751C5A9F1AF3D10C0078A871 /* EditCountdownViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditCountdownViewController.xib; sourceTree = "<group>"; };
@@ -153,8 +150,6 @@
 				75EDAB401AF2EDDE00516F9E /* CountdownDetailViewController.h */,
 				75EDAB411AF2EDDE00516F9E /* CountdownDetailViewController.m */,
 				75EDAB421AF2EDDE00516F9E /* CountdownDetailViewController.xib */,
-				750530791B59B36D0047A94E /* CountdownImageHeaderView.h */,
-				7505307A1B59B36D0047A94E /* CountdownImageHeaderView.m */,
 				75EDAB3B1AF2B6A400516F9E /* CountdownCell.h */,
 				75EDAB3C1AF2B6A400516F9E /* CountdownCell.m */,
 				75EDAB3D1AF2B6A400516F9E /* CountdownCell.xib */,
@@ -368,7 +363,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				75EDAB331AF2757B00516F9E /* DateHandler.m in Sources */,
-				7505307B1B59B36D0047A94E /* CountdownImageHeaderView.m in Sources */,
 				75EDAB471AF2FD4600516F9E /* UILabel+WhiteUIDatePickerLabels.m in Sources */,
 				751C5AA01AF3D10C0078A871 /* EditCountdownViewController.m in Sources */,
 				75EDAB431AF2EDDE00516F9E /* CountdownDetailViewController.m in Sources */,

@@ -11,5 +11,4 @@
 @interface CountdownDetailViewController : UITableViewController
 -(instancetype)initWithCountdown:(NSDictionary*)countdown;
 -(void)reloadCountdown;
--(void)loadTableHeader;
 @end

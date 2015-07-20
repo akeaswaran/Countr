@@ -80,12 +80,14 @@
     NSDate *date = dateDict[@"date"];
     NSString *title = dateDict[@"title"];
     NSString *description = dateDict[@"description"];
-    NSArray *images;
-    if (dateDict[@"images"]) {
-        images = dateDict[@"images"];
-    }
     
     if (![self countdownForID:identifier]) {
+        /*NSMutableDictionary *dateDict = [NSMutableDictionary dictionary];
+         [dateDict setObject:date forKey:@"date"];
+         [dateDict setObject:description forKey:@"description"];
+         [dateDict setObject:identifier forKey:@"id"];
+         [dateDict setObject:title forKey:@"title"];*/
+        
         NSMutableArray *mutableCountdowns = [[self allCountdowns] mutableCopy];
         [mutableCountdowns addObject:dateDict];
         
@@ -104,9 +106,6 @@
         [dateMutable setObject:date forKey:@"date"];
         [dateMutable setObject:description forKey:@"description"];
         [dateMutable setObject:title forKey:@"title"];
-        if(images) {
-            [dateMutable setObject:images forKey:@"images"];
-        }
         
         NSLog(@"DICT AFTER EDIT: %@",dateMutable);
         
@@ -120,7 +119,7 @@
         
         [self _scheduleNotificationForCountdown:dateDict];
     }
-
+    
 }
 
 -(void)_scheduleNotificationForCountdown:(NSDictionary*)countdown {
@@ -162,13 +161,6 @@
     NSMutableArray *mutableCountdowns = [[self allCountdowns] mutableCopy];
     [mutableCountdowns removeObject:dateDict];
     
-    NSArray *fileNames = dateDict[@"images"];
-    if (fileNames && fileNames.count > 0) {
-        for (NSString *fileName in fileNames) {
-            [self removeImage:fileName];
-        }
-    }
-    
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsPath = [paths objectAtIndex:0];
     NSString *credentialsFilePath = [documentsPath stringByAppendingPathComponent:kCDPlistFilePath];
@@ -177,26 +169,9 @@
     [self _cancelNotificationForCountdown:dateDict];
 }
 
-- (void)removeImage:(NSString *)fileName
-{
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    
-    NSString *filePath = [documentsPath stringByAppendingPathComponent:fileName];
-    NSError *error;
-    BOOL success = [fileManager removeItemAtPath:filePath error:&error];
-    if (success) {
-        NSLog(@"Failed to delete %@",fileName);
-    }
-    else
-    {
-        NSLog(@"Could not delete file -:%@ ",[error localizedDescription]);
-    }
-}
-
 -(NSString *)_generateCountdownIdentifier:(NSInteger)length {
     NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-
+    
     NSMutableString *randomString = [NSMutableString stringWithCapacity: length];
     
     for (int i=0; i<length; i++) {
@@ -207,12 +182,9 @@
     return randomString;
 }
 
--(NSString*)generateImageNameForCountdown:(NSDictionary*)countdown {
-    return [NSString stringWithFormat:@"%@_%@",countdown[@"title"],[self _generateCountdownIdentifier:10]];
-}
-
 -(NSString*)generateCountdownIdentifier:(NSInteger)length {
     return [self _generateCountdownIdentifier:length];
 }
+
 
 @end

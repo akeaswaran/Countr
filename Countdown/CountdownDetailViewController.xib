@@ -5,16 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <mutableArray key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue-Bold</string>
-        </mutableArray>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountdownDetailViewController">
             <connections>
                 <outlet property="countdownCell" destination="Q4S-Zk-yoe" id="KBe-I7-zAj"/>
+                <outlet property="countdownLocationLabel" destination="Wk1-oI-hRL" id="rvS-Ig-ZSU"/>
                 <outlet property="countdownTitleLabel" destination="BP0-rA-ze0" id="a3t-62-KPs"/>
                 <outlet property="descriptionCell" destination="cz4-fz-J4t" id="e74-Hj-2GE"/>
                 <outlet property="descriptionTextView" destination="D6b-3K-6Xe" id="wpM-gf-7AC"/>
@@ -176,44 +171,57 @@
             <animations/>
             <point key="canvasLocation" x="324" y="861"/>
         </tableViewCell>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="152" id="mXz-OC-6ZE">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="152"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="122" id="mXz-OC-6ZE">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mXz-OC-6ZE" id="aal-1k-B7o">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="151.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday, November 22, 2015" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqS-Zq-ypM">
-                        <rect key="frame" x="8" y="107" width="304" height="31"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GRADUATION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BP0-rA-ze0">
+                        <rect key="frame" x="8" y="8" width="304" height="35"/>
                         <animations/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="31" id="uHu-Te-CJd"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GRADUATION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BP0-rA-ze0">
-                        <rect key="frame" x="0.0" y="8" width="320" height="96"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday, November 22, 2015" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqS-Zq-ypM">
+                        <rect key="frame" x="8" y="51" width="304" height="31"/>
                         <animations/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="t9l-Tn-bdl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="At Milton High School" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wk1-oI-hRL">
+                        <rect key="frame" x="8" y="90" width="304" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="2j5-w3-9zd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <animations/>
                 <constraints>
-                    <constraint firstItem="XqS-Zq-ypM" firstAttribute="trailing" secondItem="BP0-rA-ze0" secondAttribute="trailing" constant="-8" id="4ss-85-TUy"/>
-                    <constraint firstItem="XqS-Zq-ypM" firstAttribute="top" secondItem="BP0-rA-ze0" secondAttribute="bottom" constant="3" id="Q18-FH-SgY"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="XqS-Zq-ypM" secondAttribute="bottom" constant="5" id="VyV-u0-QnH"/>
-                    <constraint firstItem="XqS-Zq-ypM" firstAttribute="centerX" secondItem="aal-1k-B7o" secondAttribute="centerX" id="WHp-Kh-FDD"/>
-                    <constraint firstItem="BP0-rA-ze0" firstAttribute="top" secondItem="aal-1k-B7o" secondAttribute="topMargin" id="ebP-m8-6Zw"/>
-                    <constraint firstItem="BP0-rA-ze0" firstAttribute="leading" secondItem="aal-1k-B7o" secondAttribute="leadingMargin" constant="-8" id="eql-o2-JrG"/>
-                    <constraint firstItem="BP0-rA-ze0" firstAttribute="leading" secondItem="XqS-Zq-ypM" secondAttribute="leading" constant="-8" id="zJT-CH-k53"/>
+                    <constraint firstItem="XqS-Zq-ypM" firstAttribute="trailing" secondItem="aal-1k-B7o" secondAttribute="trailingMargin" id="0Cr-nc-ane"/>
+                    <constraint firstItem="Wk1-oI-hRL" firstAttribute="leading" secondItem="XqS-Zq-ypM" secondAttribute="leading" id="4v2-QL-5c4"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Wk1-oI-hRL" secondAttribute="bottom" constant="2.5" id="6s8-kK-8y1"/>
+                    <constraint firstItem="BP0-rA-ze0" firstAttribute="top" secondItem="aal-1k-B7o" secondAttribute="topMargin" id="Gnm-JK-UO6"/>
+                    <constraint firstItem="Wk1-oI-hRL" firstAttribute="trailing" secondItem="XqS-Zq-ypM" secondAttribute="trailing" id="Hau-oA-qbq"/>
+                    <constraint firstItem="Wk1-oI-hRL" firstAttribute="top" secondItem="XqS-Zq-ypM" secondAttribute="bottom" constant="8" symbolic="YES" id="au5-wc-J9W"/>
+                    <constraint firstItem="XqS-Zq-ypM" firstAttribute="leading" secondItem="BP0-rA-ze0" secondAttribute="leading" id="nhy-oU-D8T"/>
+                    <constraint firstItem="Wk1-oI-hRL" firstAttribute="leading" secondItem="aal-1k-B7o" secondAttribute="leadingMargin" id="paf-DQ-v3m"/>
+                    <constraint firstItem="XqS-Zq-ypM" firstAttribute="top" secondItem="BP0-rA-ze0" secondAttribute="bottom" constant="8" symbolic="YES" id="pdI-4U-fEz"/>
+                    <constraint firstItem="XqS-Zq-ypM" firstAttribute="trailing" secondItem="BP0-rA-ze0" secondAttribute="trailing" id="rfD-Fi-VxZ"/>
                 </constraints>
             </tableViewCellContentView>
             <animations/>
-            <point key="canvasLocation" x="324" y="1144"/>
+            <point key="canvasLocation" x="324" y="1129"/>
         </tableViewCell>
     </objects>
 </document>

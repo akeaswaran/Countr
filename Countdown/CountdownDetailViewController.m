@@ -27,6 +27,7 @@
     IBOutlet UILabel *formattedDateLabel;
     IBOutlet UITableViewCell *formattedDateCell;
     IBOutlet UILabel *countdownTitleLabel;
+    IBOutlet UILabel *countdownLocationLabel;
     IBOutlet UILabel *leftLabel;
     
     NSDateFormatter *dateFormatter;
@@ -76,10 +77,10 @@
     NSDate *countdownToDate = dateDict[@"date"];
     [countdownTitleLabel setText:dateDict[@"title"]];
     [formattedDateLabel setText:[dateFormatter stringFromDate:countdownToDate]];
+    [countdownLocationLabel setText:[NSString stringWithFormat:@"At %@", dateDict[@"location"]]];
     [countdownTitleLabel sizeToFit];
-    [countdownTitleLabel setFrame:CGRectMake(countdownTitleLabel.frame.origin.x, countdownTitleLabel.frame.origin.y, countdownTitleLabel.frame.size.width, countdownTitleLabel.frame.size.height + 12)];
-    CGFloat titleHeight = countdownTitleLabel.frame.size.height;
-    heightForTitle =  titleHeight + 13 + formattedDateLabel.frame.size.height;
+    [countdownLocationLabel sizeToFit];
+    heightForTitle = 8 + countdownTitleLabel.frame.size.height + 5 + formattedDateLabel.frame.size.height + 5 + countdownLocationLabel.frame.size.height + 5 + 15;
     [self.tableView reloadData];
 }
 
@@ -136,6 +137,7 @@
     if (indexPath.section == 0) {
         [countdownTitleLabel setTextColor:contrastColor];
         [formattedDateLabel setTextColor:contrastColor];
+        [countdownLocationLabel setTextColor:complmentaryColor];
         [countdownTitleLabel setTextAlignment:NSTextAlignmentCenter];
         [countdownTitleLabel setText:dateDict[@"title"]];
         [formattedDateLabel setText:[dateFormatter stringFromDate:countdownToDate]];

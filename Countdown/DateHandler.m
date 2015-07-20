@@ -80,14 +80,9 @@
     NSDate *date = dateDict[@"date"];
     NSString *title = dateDict[@"title"];
     NSString *description = dateDict[@"description"];
+    NSString *location = dateDict[@"location"];
     
     if (![self countdownForID:identifier]) {
-        /*NSMutableDictionary *dateDict = [NSMutableDictionary dictionary];
-         [dateDict setObject:date forKey:@"date"];
-         [dateDict setObject:description forKey:@"description"];
-         [dateDict setObject:identifier forKey:@"id"];
-         [dateDict setObject:title forKey:@"title"];*/
-        
         NSMutableArray *mutableCountdowns = [[self allCountdowns] mutableCopy];
         [mutableCountdowns addObject:dateDict];
         
@@ -106,6 +101,7 @@
         [dateMutable setObject:date forKey:@"date"];
         [dateMutable setObject:description forKey:@"description"];
         [dateMutable setObject:title forKey:@"title"];
+        [dateMutable setObject:location forKey:@"location"];
         
         NSLog(@"DICT AFTER EDIT: %@",dateMutable);
         
@@ -125,7 +121,7 @@
 -(void)_scheduleNotificationForCountdown:(NSDictionary*)countdown {
     UILocalNotification *localNotification = [[UILocalNotification alloc] init];
     localNotification.fireDate = countdown[@"date"];
-    localNotification.alertBody = [NSString stringWithFormat:@"The countdown is over - %@ is finally here!", countdown[@"title"]];
+    localNotification.alertBody = [NSString stringWithFormat:@"The countdown is over - %@ at %@ is finally here!", countdown[@"title"],countdown[@"location"]];
     localNotification.userInfo = @{@"id" : countdown[@"id"]};
     localNotification.soundName = UILocalNotificationDefaultSoundName;
     localNotification.applicationIconBadgeNumber++;

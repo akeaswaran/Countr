@@ -13,14 +13,15 @@
                 <outlet property="datePicker" destination="Iuf-cM-7Jg" id="QB5-Jn-Esg"/>
                 <outlet property="descriptionCell" destination="40t-Pq-FAx" id="ODN-UX-jqM"/>
                 <outlet property="descriptionTextView" destination="D9P-zo-vMo" id="jDf-OP-Qt8"/>
-                <outlet property="nameLabel" destination="1do-D4-FbT" id="UUP-g7-OJm"/>
+                <outlet property="locationCell" destination="wgX-yL-GK3" id="1mY-BG-azS"/>
+                <outlet property="locationField" destination="T9w-df-gto" id="8ai-Xl-HOC"/>
                 <outlet property="pickerCell" destination="6dz-wj-wfc" id="BJQ-7M-6SW"/>
                 <outlet property="timeCell" destination="du4-2q-7u2" id="SrH-QP-N2Z"/>
                 <outlet property="timeLabel" destination="w0I-D9-o3s" id="RJk-HT-NpM"/>
                 <outlet property="timePicker" destination="nxP-dd-uxU" id="X2P-u8-iep"/>
                 <outlet property="timePickerCell" destination="SWq-6y-hD0" id="aQt-Is-PVq"/>
                 <outlet property="titleCell" destination="DAN-NV-f7p" id="xfa-RK-tSp"/>
-                <outlet property="titleField" destination="WHx-r4-c7v" id="MKL-1Q-8Bl"/>
+                <outlet property="titleField" destination="KvY-8c-j6h" id="RR3-fI-Aoq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -39,35 +40,22 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DAN-NV-f7p" id="EAa-ke-DMz">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Christmas, Graduation, etc." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WHx-r4-c7v">
-                        <rect key="frame" x="82" y="7" width="223" height="30"/>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of the event (ex. Christmas, etc.)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KvY-8c-j6h">
+                        <rect key="frame" x="15" y="7" width="291" height="30"/>
                         <animations/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="223" id="8dr-gc-zcn"/>
-                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1do-D4-FbT">
-                        <rect key="frame" x="15" y="7" width="59" height="30"/>
-                        <animations/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <animations/>
                 <constraints>
-                    <constraint firstItem="1do-D4-FbT" firstAttribute="top" secondItem="EAa-ke-DMz" secondAttribute="topMargin" constant="-1" id="8C6-9H-T2A"/>
-                    <constraint firstItem="WHx-r4-c7v" firstAttribute="top" secondItem="1do-D4-FbT" secondAttribute="top" id="CvT-mb-bGG"/>
-                    <constraint firstItem="WHx-r4-c7v" firstAttribute="leading" secondItem="1do-D4-FbT" secondAttribute="trailing" constant="8" symbolic="YES" id="Ex0-Sl-5pv"/>
-                    <constraint firstItem="WHx-r4-c7v" firstAttribute="bottom" secondItem="1do-D4-FbT" secondAttribute="bottom" id="PPF-hS-gKh"/>
-                    <constraint firstItem="WHx-r4-c7v" firstAttribute="trailing" secondItem="EAa-ke-DMz" secondAttribute="trailingMargin" constant="-7" id="Zoa-L3-PGQ"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="1do-D4-FbT" secondAttribute="bottom" constant="-2" id="auN-5B-1L0"/>
-                    <constraint firstItem="1do-D4-FbT" firstAttribute="leading" secondItem="EAa-ke-DMz" secondAttribute="leadingMargin" constant="7" id="jje-Kz-gZy"/>
+                    <constraint firstItem="KvY-8c-j6h" firstAttribute="leading" secondItem="EAa-ke-DMz" secondAttribute="leadingMargin" constant="7" id="JfS-At-FW6"/>
+                    <constraint firstItem="KvY-8c-j6h" firstAttribute="centerX" secondItem="EAa-ke-DMz" secondAttribute="centerX" id="Pj0-1F-wQk"/>
+                    <constraint firstItem="KvY-8c-j6h" firstAttribute="centerY" secondItem="EAa-ke-DMz" secondAttribute="centerY" id="SDE-v7-s0g"/>
+                    <constraint firstItem="KvY-8c-j6h" firstAttribute="top" secondItem="EAa-ke-DMz" secondAttribute="topMargin" constant="-1" id="agd-U4-BcN"/>
                 </constraints>
             </tableViewCellContentView>
             <animations/>
@@ -106,8 +94,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Iuf-cM-7Jg">
-                        <rect key="frame" x="3" y="-13" width="314" height="162"/>
+                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Iuf-cM-7Jg">
+                        <rect key="frame" x="3" y="-13" width="314" height="216"/>
                         <animations/>
                         <date key="date" timeIntervalSinceReferenceDate="452110707.08872402">
                             <!--2015-04-30 18:18:27 +0000-->
@@ -137,8 +125,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="nxP-dd-uxU">
-                        <rect key="frame" x="3" y="-13" width="314" height="162"/>
+                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="nxP-dd-uxU">
+                        <rect key="frame" x="3" y="-13" width="314" height="216"/>
                         <animations/>
                         <date key="date" timeIntervalSinceReferenceDate="452110707.08872402">
                             <!--2015-04-30 18:18:27 +0000-->
@@ -203,6 +191,31 @@
             </tableViewCellContentView>
             <animations/>
             <point key="canvasLocation" x="324" y="861"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="wgX-yL-GK3">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wgX-yL-GK3" id="LQh-eS-7Xq">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Location of the event (ex. Home, etc.)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T9w-df-gto">
+                        <rect key="frame" x="15" y="7" width="291" height="30"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="T9w-df-gto" firstAttribute="top" secondItem="LQh-eS-7Xq" secondAttribute="topMargin" constant="-1" id="ZNu-GY-fGV"/>
+                    <constraint firstItem="T9w-df-gto" firstAttribute="centerX" secondItem="LQh-eS-7Xq" secondAttribute="centerX" id="d2U-iT-cvX"/>
+                    <constraint firstItem="T9w-df-gto" firstAttribute="centerY" secondItem="LQh-eS-7Xq" secondAttribute="centerY" id="m7N-5J-PYg"/>
+                    <constraint firstItem="T9w-df-gto" firstAttribute="leading" secondItem="LQh-eS-7Xq" secondAttribute="leadingMargin" constant="7" id="z7S-wJ-f1s"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <point key="canvasLocation" x="386" y="-585"/>
         </tableViewCell>
     </objects>
 </document>

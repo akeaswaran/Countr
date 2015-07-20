@@ -13,9 +13,8 @@
                 <outlet property="datePicker" destination="5Us-1s-kjM" id="chR-oW-sdI"/>
                 <outlet property="descriptionCell" destination="FtB-0W-2HD" id="OdA-ua-Dgi"/>
                 <outlet property="descriptionTextView" destination="c5S-m6-2fO" id="iWq-Po-haa"/>
-                <outlet property="imageCell" destination="Lov-go-rNs" id="f7e-bf-4My"/>
-                <outlet property="imageLabel" destination="viy-kQ-VD3" id="rpV-QJ-4tC"/>
-                <outlet property="nameLabel" destination="PMO-bs-X0N" id="nIx-qs-qZO"/>
+                <outlet property="locationCell" destination="fds-kD-LTb" id="x5b-YH-I96"/>
+                <outlet property="locationField" destination="NSG-1l-L57" id="bgM-B6-Nw3"/>
                 <outlet property="pickerCell" destination="Xre-Q8-tg7" id="RjP-wc-DEr"/>
                 <outlet property="timeCell" destination="iBH-1d-d8g" id="gVC-ZP-HO4"/>
                 <outlet property="timeLabel" destination="F62-w6-c5J" id="tau-du-93o"/>
@@ -42,35 +41,22 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GdO-Nb-TQ8" id="ojb-RV-tG8">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Christmas, Graduation, etc." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZLR-9z-yp1">
-                        <rect key="frame" x="82" y="7" width="223" height="30"/>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of the event (ex. Christmas, etc.)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZLR-9z-yp1">
+                        <rect key="frame" x="14" y="7" width="291" height="30"/>
                         <animations/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="223" id="E9h-Gt-4Fz"/>
-                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMO-bs-X0N">
-                        <rect key="frame" x="15" y="7" width="59" height="30"/>
-                        <animations/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <animations/>
                 <constraints>
-                    <constraint firstItem="ZLR-9z-yp1" firstAttribute="trailing" secondItem="ojb-RV-tG8" secondAttribute="trailingMargin" constant="-7" id="1mU-bV-ykv"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="PMO-bs-X0N" secondAttribute="bottom" constant="-2" id="39A-dZ-zZI"/>
-                    <constraint firstItem="ZLR-9z-yp1" firstAttribute="bottom" secondItem="PMO-bs-X0N" secondAttribute="bottom" id="GGl-XW-0oC"/>
-                    <constraint firstItem="PMO-bs-X0N" firstAttribute="top" secondItem="ZLR-9z-yp1" secondAttribute="top" id="Kze-H8-X3a"/>
-                    <constraint firstItem="PMO-bs-X0N" firstAttribute="top" secondItem="ojb-RV-tG8" secondAttribute="topMargin" constant="-1" id="W4t-pt-u16"/>
-                    <constraint firstItem="ZLR-9z-yp1" firstAttribute="leading" secondItem="PMO-bs-X0N" secondAttribute="trailing" constant="8" symbolic="YES" id="gXy-vu-uEs"/>
-                    <constraint firstItem="PMO-bs-X0N" firstAttribute="leading" secondItem="ojb-RV-tG8" secondAttribute="leadingMargin" constant="7" id="xTN-kp-REn"/>
+                    <constraint firstItem="ZLR-9z-yp1" firstAttribute="centerX" secondItem="ojb-RV-tG8" secondAttribute="centerX" id="35d-b5-hXn"/>
+                    <constraint firstItem="ZLR-9z-yp1" firstAttribute="leading" secondItem="ojb-RV-tG8" secondAttribute="leadingMargin" constant="6" id="Oql-rI-7Hf"/>
+                    <constraint firstItem="ZLR-9z-yp1" firstAttribute="centerY" secondItem="ojb-RV-tG8" secondAttribute="centerY" id="Vxh-VS-eIf"/>
+                    <constraint firstItem="ZLR-9z-yp1" firstAttribute="top" secondItem="ojb-RV-tG8" secondAttribute="topMargin" constant="-1" id="uI3-hK-xKT"/>
                 </constraints>
             </tableViewCellContentView>
             <animations/>
@@ -109,8 +95,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="5Us-1s-kjM">
-                        <rect key="frame" x="3" y="-13" width="314" height="162"/>
+                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="5Us-1s-kjM">
+                        <rect key="frame" x="3" y="-13" width="314" height="216"/>
                         <animations/>
                         <date key="date" timeIntervalSinceReferenceDate="452110707.08872402">
                             <!--2015-04-30 18:18:27 +0000-->
@@ -140,8 +126,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="51T-eT-BfX">
-                        <rect key="frame" x="3" y="-13" width="314" height="162"/>
+                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="51T-eT-BfX">
+                        <rect key="frame" x="3" y="-13" width="314" height="216"/>
                         <animations/>
                         <date key="date" timeIntervalSinceReferenceDate="452110707.08872402">
                             <!--2015-04-30 18:18:27 +0000-->
@@ -211,7 +197,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lov-go-rNs" id="iMK-0k-bjv">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Images..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viy-kQ-VD3">
@@ -232,6 +218,31 @@
             </tableViewCellContentView>
             <animations/>
             <point key="canvasLocation" x="560" y="-599"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="fds-kD-LTb">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fds-kD-LTb" id="tLs-j8-QpS">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Location of the event (ex. Home, etc.)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NSG-1l-L57">
+                        <rect key="frame" x="15" y="7" width="291" height="30"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="NSG-1l-L57" firstAttribute="centerX" secondItem="tLs-j8-QpS" secondAttribute="centerX" id="0q3-Hr-JKh"/>
+                    <constraint firstItem="NSG-1l-L57" firstAttribute="top" secondItem="tLs-j8-QpS" secondAttribute="topMargin" constant="-1" id="Sgl-nk-frA"/>
+                    <constraint firstItem="NSG-1l-L57" firstAttribute="centerY" secondItem="tLs-j8-QpS" secondAttribute="centerY" id="afF-73-Hrg"/>
+                    <constraint firstItem="NSG-1l-L57" firstAttribute="leading" secondItem="tLs-j8-QpS" secondAttribute="leadingMargin" constant="7" id="w0b-8u-EcB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <point key="canvasLocation" x="386" y="-585"/>
         </tableViewCell>
     </objects>
 </document>

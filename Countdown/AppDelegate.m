@@ -62,8 +62,10 @@
     [[[UIApplication sharedApplication] keyWindow] setTintColor:tintColor];
     if ([color isEqual:[UIColor flatBlackColor]]) {
         [[UILabel appearanceWhenContainedIn:[UITableViewHeaderFooterView class], nil] setTextColor:[UIColor darkGrayColor]];
+        [[UILabel appearanceWhenContainedIn:[UITextField class], nil] setTextColor:[UIColor darkGrayColor]];
     } else {
         [[UILabel appearanceWhenContainedIn:[UITableViewHeaderFooterView class], nil] setTextColor:[NSKeyedUnarchiver unarchiveObjectWithData:colorDict[@"separatorColor"]]];
+        [[UILabel appearanceWhenContainedIn:[UITextField class], nil] setTextColor:[NSKeyedUnarchiver unarchiveObjectWithData:colorDict[@"separatorColor"]]];
     }
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadColors" object:nil];

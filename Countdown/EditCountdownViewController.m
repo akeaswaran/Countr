@@ -20,7 +20,9 @@
 {
     IBOutlet UITableViewCell *titleCell;
     IBOutlet UITextField *titleField;
-    IBOutlet UILabel *nameLabel;
+    
+    IBOutlet UITableViewCell *locationCell;
+    IBOutlet UITextField *locationField;
     
     IBOutlet UITableViewCell *dateCell;
     IBOutlet UILabel *dateLabel;
@@ -109,6 +111,7 @@
         [dateDict setObject:descriptionTextView.text forKey:@"description"];
         [dateDict setObject:storedCountdown[@"id"] forKey:@"id"];
         [dateDict setObject:titleField.text forKey:@"title"];
+        [dateDict setObject:locationField.text forKey:@"location"];
         [[DateHandler sharedHandler] saveCountdown:dateDict];
         
         NSLog(@"SAVED %@ with date %@",titleField.text,chosenDate);
@@ -181,7 +184,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    if (section == 0 | section == 1)
+    if (section == 1)
         return 1;
     else
         return 2;
@@ -204,10 +207,15 @@
     UIColor *contrastColor = [UIColor colorWithContrastingBlackOrWhiteColorOn:mainColor isFlat:NO];
     
     if (indexPath.section == 0) {
-        [titleCell setBackgroundColor:mainColor];
-        [titleField setTextColor:contrastColor];
-        [nameLabel setTextColor:contrastColor];
-        return titleCell;
+        if(indexPath.row == 0) {
+            [titleCell setBackgroundColor:mainColor];
+            [titleField setTextColor:contrastColor];
+            return titleCell;
+        } else {
+            [locationCell setBackgroundColor:mainColor];
+            [locationField setTextColor:contrastColor];
+            return locationCell;
+        }
     } else if (indexPath.section == 1) {
         [descriptionCell setBackgroundColor:mainColor];
         [descriptionTextView setBackgroundColor:mainColor];

@@ -18,5 +18,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *specificTimeDenotation;
 @property (strong, nonatomic) IBOutlet UILabel *detailedTimeDenotation;
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *locationLabel;
 
 @end

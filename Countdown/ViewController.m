@@ -38,8 +38,8 @@
     [self.tableView setSeparatorColor:complmentaryColor];
     
     self.title = @"Nimbus";
-    self.tableView.estimatedRowHeight = 110;
-    self.tableView.rowHeight = 110;
+    self.tableView.estimatedRowHeight = 126;
+    self.tableView.rowHeight = 126;
     
     [self refreshCountdownList];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewCountdown)];
@@ -106,11 +106,12 @@
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CountdownCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CountdownCell"];
-    //cell.selectionStyle = UITableViewCellSelectionStyleNone;
     NSDictionary *dateDict = countdowns[indexPath.row];
     NSDate *countdownToDate = dateDict[@"date"];
     [cell.titleLabel setText:dateDict[@"title"]];
     [cell.titleLabel sizeToFit];
+    [cell.locationLabel setText:dateDict[@"location"]];
+    [cell.locationLabel sizeToFit];
     
     NSDictionary *colorDict = [[NSUserDefaults standardUserDefaults] objectForKey:@"colorScheme"];
     UIColor *mainColor = [NSKeyedUnarchiver unarchiveObjectWithData:colorDict[@"color"]];
@@ -135,11 +136,13 @@
         [cell.lessGeneralTimeDenotation setTextColor:[UIColor darkGrayColor]];
         [cell.specificTimeDenotation setTextColor:[UIColor darkGrayColor]];
         [cell.detailedTimeDenotation setTextColor:[UIColor darkGrayColor]];
+        [cell.locationLabel setTextColor:[UIColor darkGrayColor]];
     } else {
         [cell.generalTimeDenotation setTextColor:complmentaryColor];
         [cell.lessGeneralTimeDenotation setTextColor:complmentaryColor];
         [cell.specificTimeDenotation setTextColor:complmentaryColor];
         [cell.detailedTimeDenotation setTextColor:complmentaryColor];
+        [cell.locationLabel setTextColor:complmentaryColor];
     }
     
     if ([countdownToDate isLaterThan:[NSDate date]]) {
@@ -246,7 +249,6 @@
         [cell.detailedTimeLabel setTextColor:disabledColor];
         [cell.titleLabel setTextColor:disabledColor];
 
-        
         [cell.generalTimeLabel setText:@"0"];
         [cell.lessGeneralTimeLabel setText:@"0"];
         [cell.specificTimeLabel setText:@"0"];

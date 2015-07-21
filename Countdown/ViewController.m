@@ -22,6 +22,7 @@
     NSArray *countdowns;
     NSTimer *dateTimer;
     UITapGestureRecognizer *tapRecog;
+    NSDateFormatter *dateFormatter;
 }
 @end
 
@@ -54,6 +55,10 @@
     [self reloadColors];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadColors) name:@"reloadColors" object:nil];
+    
+    dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setFormatterBehavior:NSDateFormatterBehavior10_4];
+    [dateFormatter setDateFormat:[NSString stringWithFormat:@"MMMM d, YYYY"]];
 }
 
 -(void)reloadColors {
@@ -110,7 +115,7 @@
     NSDate *countdownToDate = dateDict[@"date"];
     [cell.titleLabel setText:dateDict[@"title"]];
     [cell.titleLabel sizeToFit];
-    [cell.locationLabel setText:dateDict[@"location"]];
+    [cell.locationLabel setText:[NSString stringWithFormat:@"%@ - %@",[dateFormatter stringFromDate:countdownToDate],dateDict[@"location"]]];
     [cell.locationLabel sizeToFit];
     
     NSDictionary *colorDict = [[NSUserDefaults standardUserDefaults] objectForKey:@"colorScheme"];

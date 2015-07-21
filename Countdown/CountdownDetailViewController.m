@@ -77,7 +77,7 @@
     NSDate *countdownToDate = dateDict[@"date"];
     [countdownTitleLabel setText:dateDict[@"title"]];
     [formattedDateLabel setText:[dateFormatter stringFromDate:countdownToDate]];
-    [countdownLocationLabel setText:[NSString stringWithFormat:@"At %@", dateDict[@"location"]]];
+    [countdownLocationLabel setText:[NSString stringWithFormat:@"%@", dateDict[@"location"]]];
     [countdownTitleLabel sizeToFit];
     [countdownLocationLabel sizeToFit];
     heightForTitle = 8 + countdownTitleLabel.frame.size.height + 5 + formattedDateLabel.frame.size.height + 5 + countdownLocationLabel.frame.size.height + 5 + 15;

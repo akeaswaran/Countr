@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8121.17" systemVersion="15A215h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -29,7 +29,6 @@
         <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bouncesZoom="NO" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <animations/>
             <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="dataSource" destination="-1" id="Tng-2m-Rnh"/>
@@ -40,17 +39,15 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DAN-NV-f7p" id="EAa-ke-DMz">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of the event (ex. Christmas, etc.)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KvY-8c-j6h">
                         <rect key="frame" x="15" y="7" width="291" height="30"/>
-                        <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                 </subviews>
-                <animations/>
                 <constraints>
                     <constraint firstItem="KvY-8c-j6h" firstAttribute="leading" secondItem="EAa-ke-DMz" secondAttribute="leadingMargin" constant="7" id="JfS-At-FW6"/>
                     <constraint firstItem="KvY-8c-j6h" firstAttribute="centerX" secondItem="EAa-ke-DMz" secondAttribute="centerX" id="Pj0-1F-wQk"/>
@@ -58,7 +55,6 @@
                     <constraint firstItem="KvY-8c-j6h" firstAttribute="top" secondItem="EAa-ke-DMz" secondAttribute="topMargin" constant="-1" id="agd-U4-BcN"/>
                 </constraints>
             </tableViewCellContentView>
-            <animations/>
             <point key="canvasLocation" x="386" y="-467"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="IDX-KE-PfG">
@@ -70,13 +66,11 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHD-Nd-L6L">
                         <rect key="frame" x="8" y="8" width="304" height="27"/>
-                        <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" red="0.08235294118" green="0.37647058820000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <animations/>
                 <constraints>
                     <constraint firstItem="WHD-Nd-L6L" firstAttribute="leading" secondItem="rDE-50-2QV" secondAttribute="leadingMargin" id="Enh-DS-3zF"/>
                     <constraint firstItem="WHD-Nd-L6L" firstAttribute="centerX" secondItem="rDE-50-2QV" secondAttribute="centerX" id="SYN-ac-gkD"/>
@@ -84,7 +78,6 @@
                     <constraint firstItem="WHD-Nd-L6L" firstAttribute="top" secondItem="rDE-50-2QV" secondAttribute="topMargin" id="ydY-kY-uWM"/>
                 </constraints>
             </tableViewCellContentView>
-            <animations/>
             <point key="canvasLocation" x="386" y="-347"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="203" id="6dz-wj-wfc">
@@ -96,7 +89,6 @@
                 <subviews>
                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Iuf-cM-7Jg">
                         <rect key="frame" x="3" y="-13" width="314" height="216"/>
-                        <animations/>
                         <date key="date" timeIntervalSinceReferenceDate="452110707.08872402">
                             <!--2015-04-30 18:18:27 +0000-->
                         </date>
@@ -108,14 +100,12 @@
                         </connections>
                     </datePicker>
                 </subviews>
-                <animations/>
                 <constraints>
                     <constraint firstItem="Iuf-cM-7Jg" firstAttribute="leading" secondItem="amW-8E-jR5" secondAttribute="leadingMargin" constant="-5" id="KOm-FZ-ZT8"/>
                     <constraint firstItem="Iuf-cM-7Jg" firstAttribute="centerX" secondItem="amW-8E-jR5" secondAttribute="centerX" id="uBD-4K-YS2"/>
                     <constraint firstItem="Iuf-cM-7Jg" firstAttribute="top" secondItem="amW-8E-jR5" secondAttribute="top" constant="-13" id="xgA-n6-aH6"/>
                 </constraints>
             </tableViewCellContentView>
-            <animations/>
             <point key="canvasLocation" x="394" y="-130"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="203" id="SWq-6y-hD0">
@@ -127,7 +117,6 @@
                 <subviews>
                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="nxP-dd-uxU">
                         <rect key="frame" x="3" y="-13" width="314" height="216"/>
-                        <animations/>
                         <date key="date" timeIntervalSinceReferenceDate="452110707.08872402">
                             <!--2015-04-30 18:18:27 +0000-->
                         </date>
@@ -136,14 +125,12 @@
                         </connections>
                     </datePicker>
                 </subviews>
-                <animations/>
                 <constraints>
                     <constraint firstItem="nxP-dd-uxU" firstAttribute="leading" secondItem="bht-PC-qIc" secondAttribute="leadingMargin" constant="-5" id="CEn-Iz-IZT"/>
                     <constraint firstItem="nxP-dd-uxU" firstAttribute="centerX" secondItem="bht-PC-qIc" secondAttribute="centerX" id="SHl-LX-uT2"/>
                     <constraint firstItem="nxP-dd-uxU" firstAttribute="top" secondItem="bht-PC-qIc" secondAttribute="top" constant="-13" id="bik-g8-bD5"/>
                 </constraints>
             </tableViewCellContentView>
-            <animations/>
             <point key="canvasLocation" x="783" y="-130"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="du4-2q-7u2">
@@ -155,13 +142,11 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0I-D9-o3s">
                         <rect key="frame" x="8" y="8" width="304" height="27"/>
-                        <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" red="0.08235294118" green="0.37647058820000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <animations/>
                 <constraints>
                     <constraint firstItem="w0I-D9-o3s" firstAttribute="leading" secondItem="CQO-5b-Jwf" secondAttribute="leadingMargin" id="M4V-dP-ldF"/>
                     <constraint firstItem="w0I-D9-o3s" firstAttribute="top" secondItem="CQO-5b-Jwf" secondAttribute="topMargin" id="NOA-Ew-e9N"/>
@@ -169,7 +154,6 @@
                     <constraint firstItem="w0I-D9-o3s" firstAttribute="bottom" secondItem="CQO-5b-Jwf" secondAttribute="bottomMargin" id="yfg-nP-Cpv"/>
                 </constraints>
             </tableViewCellContentView>
-            <animations/>
             <point key="canvasLocation" x="775" y="-347"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="225" id="40t-Pq-FAx">
@@ -181,15 +165,12 @@
                 <subviews>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9P-zo-vMo" customClass="LPlaceholderTextView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="223"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
                 </subviews>
-                <animations/>
             </tableViewCellContentView>
-            <animations/>
             <point key="canvasLocation" x="324" y="861"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="wgX-yL-GK3">
@@ -201,12 +182,10 @@
                 <subviews>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Location of the event (ex. Home, etc.)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T9w-df-gto">
                         <rect key="frame" x="15" y="7" width="291" height="30"/>
-                        <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                 </subviews>
-                <animations/>
                 <constraints>
                     <constraint firstItem="T9w-df-gto" firstAttribute="top" secondItem="LQh-eS-7Xq" secondAttribute="topMargin" constant="-1" id="ZNu-GY-fGV"/>
                     <constraint firstItem="T9w-df-gto" firstAttribute="centerX" secondItem="LQh-eS-7Xq" secondAttribute="centerX" id="d2U-iT-cvX"/>
@@ -214,7 +193,6 @@
                     <constraint firstItem="T9w-df-gto" firstAttribute="leading" secondItem="LQh-eS-7Xq" secondAttribute="leadingMargin" constant="7" id="z7S-wJ-f1s"/>
                 </constraints>
             </tableViewCellContentView>
-            <animations/>
             <point key="canvasLocation" x="386" y="-585"/>
         </tableViewCell>
     </objects>

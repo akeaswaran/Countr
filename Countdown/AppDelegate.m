@@ -68,6 +68,12 @@
         [[UILabel appearanceWhenContainedIn:[UITextField class], nil] setTextColor:[NSKeyedUnarchiver unarchiveObjectWithData:colorDict[@"separatorColor"]]];
     }
     
+    if ([tintColor isEqual:[UIColor whiteColor]]) {
+        [[UITextField appearance] setKeyboardAppearance:UIKeyboardAppearanceDark];
+    } else {
+        [[UITextField appearance] setKeyboardAppearance:UIKeyboardAppearanceLight];
+    }
+    
     [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadColors" object:nil];
 }
 

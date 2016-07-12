@@ -1,0 +1,27 @@
+PODS:
+  - ChameleonFramework (1.2.1):
+    - ChameleonFramework/Default (= 1.2.1)
+  - ChameleonFramework/Default (1.2.1)
+  - DateTools (1.6.1)
+  - LPlaceholderTextView (1.0)
+
+DEPENDENCIES:
+  - ChameleonFramework
+  - DateTools
+  - LPlaceholderTextView (from `https://github.com/lukagabric/LPlaceholderTextView.git`)
+
+EXTERNAL SOURCES:
+  LPlaceholderTextView:
+    :git: https://github.com/lukagabric/LPlaceholderTextView.git
+
+CHECKOUT OPTIONS:
+  LPlaceholderTextView:
+    :commit: eaafff8643e15f606a8ffc36964f2ab5c18ff68c
+    :git: https://github.com/lukagabric/LPlaceholderTextView.git
+
+SPEC CHECKSUMS:
+  ChameleonFramework: 3476f813ac1615aef0a9a958f05520dfca47e09d
+  DateTools: 9bcc89e4f2f9004d8a7a2bd1b49269cf78968e65
+  LPlaceholderTextView: 66bc2325778706bcfbbacc8d5e64de2d5511561b
+
+COCOAPODS: 0.37.2

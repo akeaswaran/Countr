@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BC56987B86B3716CA99B38B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D0DD304CAA00BDA772A815 /* Foundation.framework */; };
+		1C8980567AE61BC77E0DB474 /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D04BD4C4C2316B97760A83 /* NSDate+DateTools.h */; };
+		28C217F5648634F2A606781F /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BD29132FC7DA6C328623BF /* DTTimePeriod.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2D1AC12998AC5B54D7AF43C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D0DD304CAA00BDA772A815 /* Foundation.framework */; };
+		37913D2B2139968C650E71F5 /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0A5F7B25675A9F6A4E9EDA /* DTTimePeriodGroup.h */; };
+		4E5294F73149C86DD758F24C /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BCF7531B388848014AF260 /* DTTimePeriodChain.h */; };
+		52AB42EF79E96E8F18E6B418 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58F08DCD7921A18B1BB738A /* QuartzCore.framework */; };
+		56DA5B41D81ABA95AC143D20 /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 75250185D30E5558B3EFD133 /* DTTimePeriodChain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		57E9D095C01118E8771C6582 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = B462DFB92F0504484A41573D /* UIViewController+Chameleon.m */; };
+		5971ACFC97F6CB6BDFC3B260 /* Pods-Countdown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6DD341B230082C555CDFAA /* Pods-Countdown-dummy.m */; };
+		5CE1582297B402A3CFDE614D /* LPlaceholderTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B58751DCB5F6B0EC9EE78D /* LPlaceholderTextView.h */; };
+		63B315CFDAE9D7EE114731B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D0DD304CAA00BDA772A815 /* Foundation.framework */; };
+		67E737649B3CFEDF3F6A17AB /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CE145D7FC1895FCBF19C4F /* DateTools.h */; };
+		7081CF2FA3EAEBBBB10F5486 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D0DD304CAA00BDA772A815 /* Foundation.framework */; };
+		753963BCE16608EB5BC5E5E5 /* ChameleonStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0FF2832C86EBB2D7C824AE /* ChameleonStatusBar.m */; };
+		793F1A0B71A630D4C21F7D34 /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C3B9A6C57779C124CD9E448 /* UIViewController+Chameleon.h */; };
+		7C436CBAB220407D34D404E7 /* ChameleonStatusBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 51DBA145589789C1AF55D2D8 /* ChameleonStatusBar.h */; };
+		7C8BDC4FF49B3AA3781AC990 /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 97158E44409B5DF0DFEEB407 /* Chameleon.h */; };
+		81D234B7DCBC6F6CBD7C1B59 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 959EF9E164D28E0D3E4EF639 /* NSArray+Chameleon.m */; };
+		8C9385728483DC50DD540405 /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 5466AF5167853C2473B0B52B /* DTTimePeriod.h */; };
+		8EBAB72258970177F8726442 /* LPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE1E1F76641038F6FDACC7A /* LPlaceholderTextView.m */; };
+		95D67DCF9775EC148AB600C6 /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = AA338FA018F96A7248284EAD /* DTConstants.h */; };
+		96451DA12AC7A414AB7D79CB /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF73322D6DA9E5F765D161B /* UIColor+Chameleon.m */; };
+		9C7DA69A0983A65BF9E9E0D7 /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = ED3AEF9FECCC52E31A9BD510 /* DTError.h */; };
+		A034B1007B246C89B05E79AA /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CCB50D876E01655269CC36 /* DTTimePeriodGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AADDCBF75673539563356D94 /* UIColor+CIELAB.h in Headers */ = {isa = PBXBuildFile; fileRef = E347F8C57B478447F3851412 /* UIColor+CIELAB.h */; };
+		B3DBBD83E9321FD5FB8178AC /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A8DCC5F0671FBB5F53B119 /* DTTimePeriodCollection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BCB8C01ACFF057BA06777B8E /* Pods-Countdown-LPlaceholderTextView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3DDFD38BCC53C2A4F46F18 /* Pods-Countdown-LPlaceholderTextView-dummy.m */; };
+		C185C1DCEB9479CB6FB68B0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE7101F09AA183106A88631 /* CoreGraphics.framework */; };
+		C197A3F77CCC4A63560BD150 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = DCA8E093E25ECE91A06D5E92 /* NSArray+Chameleon.h */; };
+		C59C1542ACB14E18D2957C8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A4D50E3DE157353FA8AF53 /* UIKit.framework */; };
+		CB3CF83AD7697D930B7F2D05 /* Pods-Countdown-DateTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C665466280406563ABF9A390 /* Pods-Countdown-DateTools-dummy.m */; };
+		D6D5A0F1CD228A02E166E19A /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B521E019F9784D60EEABAA8 /* ChameleonMacros.h */; };
+		DE922605298063759E517161 /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 327EB2591DCAC41E48850F2E /* UIColor+Chameleon.h */; };
+		E94F92F151B73AC073E5659B /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6740480262DFDE6D46CF3095 /* DTTimePeriodCollection.h */; };
+		EA254FAEFCCBEE507FB30431 /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B662BF630F785D4E949A0DD /* NSDate+DateTools.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ED6BD986A6B417BEBFF758B3 /* UIColor+CIELAB.m in Sources */ = {isa = PBXBuildFile; fileRef = 175F8FA26BBC90936F00EBE4 /* UIColor+CIELAB.m */; };
+		F144BD72CB1398BDB9D2EE02 /* Pods-Countdown-ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E901A9A3CA45AF98DFAF57EA /* Pods-Countdown-ChameleonFramework-dummy.m */; };
+		FE41B9E35401F849A94F3461 /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A6F161D9AB911E0CA3411C /* DTError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24785E24A7337D8A5C7C93E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10B8A554A778A10EC7F172A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59530DBD33B838FAC124C33B;
+			remoteInfo = "Pods-Countdown-LPlaceholderTextView";
+		};
+		7BBC462DB0FB6212BB2CFA6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10B8A554A778A10EC7F172A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51DDE42369994B2F0D7C435C;
+			remoteInfo = "Pods-Countdown-ChameleonFramework";
+		};
+		F3B4DD13B02506941DA2674C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10B8A554A778A10EC7F172A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2C6B4CFB3F0F288D71B9C0C;
+			remoteInfo = "Pods-Countdown-DateTools";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CF73322D6DA9E5F765D161B /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		175F8FA26BBC90936F00EBE4 /* UIColor+CIELAB.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+CIELAB.m"; path = "Pod/Classes/Objective-C/UIColor+CIELAB.m"; sourceTree = "<group>"; };
+		18BC16437781897573D62078 /* libPods-Countdown-DateTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Countdown-DateTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C3B9A6C57779C124CD9E448 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		27557523320F8A75207A5E70 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2F3DDFD38BCC53C2A4F46F18 /* Pods-Countdown-LPlaceholderTextView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Countdown-LPlaceholderTextView-dummy.m"; sourceTree = "<group>"; };
+		327EB2591DCAC41E48850F2E /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
+		36A4D50E3DE157353FA8AF53 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3F870B3D118B02C6252725BE /* Pods-Countdown-ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Countdown-ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
+		425D8904FF10670B283347FD /* Pods-Countdown-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Countdown-resources.sh"; sourceTree = "<group>"; };
+		42B58751DCB5F6B0EC9EE78D /* LPlaceholderTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPlaceholderTextView.h; path = LPlaceholderTextView/LPlaceholderTextView/Classes/Core/LPlaceholderTextView/LPlaceholderTextView.h; sourceTree = "<group>"; };
+		4BE1E1F76641038F6FDACC7A /* LPlaceholderTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPlaceholderTextView.m; path = LPlaceholderTextView/LPlaceholderTextView/Classes/Core/LPlaceholderTextView/LPlaceholderTextView.m; sourceTree = "<group>"; };
+		4D0CAA159938A446221093E8 /* Pods-Countdown-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Countdown-acknowledgements.markdown"; sourceTree = "<group>"; };
+		51DBA145589789C1AF55D2D8 /* ChameleonStatusBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonStatusBar.h; path = "Pod/Classes/Objective-C/ChameleonStatusBar.h"; sourceTree = "<group>"; };
+		5319068CBC18954274BF9062 /* Pods-Countdown-LPlaceholderTextView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Countdown-LPlaceholderTextView-prefix.pch"; sourceTree = "<group>"; };
+		5466AF5167853C2473B0B52B /* DTTimePeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriod.h; path = DateTools/DTTimePeriod.h; sourceTree = "<group>"; };
+		5531C25A706751D2058E7900 /* Pods-Countdown-DateTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Countdown-DateTools.xcconfig"; sourceTree = "<group>"; };
+		55CCB50D876E01655269CC36 /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodGroup.m; path = DateTools/DTTimePeriodGroup.m; sourceTree = "<group>"; };
+		5A0A5F7B25675A9F6A4E9EDA /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodGroup.h; path = DateTools/DTTimePeriodGroup.h; sourceTree = "<group>"; };
+		6504AD1B2C2DCA19038A2E33 /* Pods-Countdown-LPlaceholderTextView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Countdown-LPlaceholderTextView.xcconfig"; sourceTree = "<group>"; };
+		6740480262DFDE6D46CF3095 /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodCollection.h; path = DateTools/DTTimePeriodCollection.h; sourceTree = "<group>"; };
+		6E6DD341B230082C555CDFAA /* Pods-Countdown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Countdown-dummy.m"; sourceTree = "<group>"; };
+		6FF0AAE7ED0490DB18970AD0 /* Pods-Countdown-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Countdown-environment.h"; sourceTree = "<group>"; };
+		74198267176D305B25701183 /* libPods-Countdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Countdown.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75250185D30E5558B3EFD133 /* DTTimePeriodChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodChain.m; path = DateTools/DTTimePeriodChain.m; sourceTree = "<group>"; };
+		7B662BF630F785D4E949A0DD /* NSDate+DateTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DateTools.m"; path = "DateTools/NSDate+DateTools.m"; sourceTree = "<group>"; };
+		84E4088696A03C33A386E513 /* Pods-Countdown-ChameleonFramework-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Countdown-ChameleonFramework-Private.xcconfig"; sourceTree = "<group>"; };
+		870302D31D1AB83D83F858BD /* Pods-Countdown-DateTools-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Countdown-DateTools-Private.xcconfig"; sourceTree = "<group>"; };
+		89CE145D7FC1895FCBF19C4F /* DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateTools.h; path = DateTools/DateTools.h; sourceTree = "<group>"; };
+		8A05DCAD7EDB735A873E0D35 /* Pods-Countdown-LPlaceholderTextView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Countdown-LPlaceholderTextView-Private.xcconfig"; sourceTree = "<group>"; };
+		93A8DCC5F0671FBB5F53B119 /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodCollection.m; path = DateTools/DTTimePeriodCollection.m; sourceTree = "<group>"; };
+		93D0DD304CAA00BDA772A815 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		959EF9E164D28E0D3E4EF639 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		97158E44409B5DF0DFEEB407 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
+		9B521E019F9784D60EEABAA8 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
+		9BD7AAA0C7A4F6B3762DAA82 /* Pods-Countdown-DateTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Countdown-DateTools-prefix.pch"; sourceTree = "<group>"; };
+		9D831BCA14933B4A0695F6AB /* Pods-Countdown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Countdown.release.xcconfig"; sourceTree = "<group>"; };
+		9E70FC8A8968598418F136ED /* Pods-Countdown-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Countdown-acknowledgements.plist"; sourceTree = "<group>"; };
+		AA338FA018F96A7248284EAD /* DTConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTConstants.h; path = DateTools/DTConstants.h; sourceTree = "<group>"; };
+		AEE7101F09AA183106A88631 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		B0A6F161D9AB911E0CA3411C /* DTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTError.m; path = DateTools/DTError.m; sourceTree = "<group>"; };
+		B2BD29132FC7DA6C328623BF /* DTTimePeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriod.m; path = DateTools/DTTimePeriod.m; sourceTree = "<group>"; };
+		B462DFB92F0504484A41573D /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		BD0FF2832C86EBB2D7C824AE /* ChameleonStatusBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonStatusBar.m; path = "Pod/Classes/Objective-C/ChameleonStatusBar.m"; sourceTree = "<group>"; };
+		C665466280406563ABF9A390 /* Pods-Countdown-DateTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Countdown-DateTools-dummy.m"; sourceTree = "<group>"; };
+		C83A56BE5DA3E6CAB0227A2D /* DateTools.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DateTools.bundle; path = DateTools/DateTools.bundle; sourceTree = "<group>"; };
+		D1D04BD4C4C2316B97760A83 /* NSDate+DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+DateTools.h"; path = "DateTools/NSDate+DateTools.h"; sourceTree = "<group>"; };
+		D58F08DCD7921A18B1BB738A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		D7463CCF9796BB717116D282 /* Pods-Countdown-ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Countdown-ChameleonFramework.xcconfig"; sourceTree = "<group>"; };
+		DCA8E093E25ECE91A06D5E92 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		E2BCF7531B388848014AF260 /* DTTimePeriodChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodChain.h; path = DateTools/DTTimePeriodChain.h; sourceTree = "<group>"; };
+		E347F8C57B478447F3851412 /* UIColor+CIELAB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+CIELAB.h"; path = "Pod/Classes/Objective-C/UIColor+CIELAB.h"; sourceTree = "<group>"; };
+		E43C74B414CAE576877F9894 /* Pods-Countdown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Countdown.debug.xcconfig"; sourceTree = "<group>"; };
+		E901A9A3CA45AF98DFAF57EA /* Pods-Countdown-ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Countdown-ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
+		ED3AEF9FECCC52E31A9BD510 /* DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTError.h; path = DateTools/DTError.h; sourceTree = "<group>"; };
+		FD5DB2184AC76150FD3BFA2B /* libPods-Countdown-LPlaceholderTextView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Countdown-LPlaceholderTextView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED9F7A1EDA8318948A0EBDC /* libPods-Countdown-ChameleonFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Countdown-ChameleonFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25B8B89ADA35103F65A0E4B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C185C1DCEB9479CB6FB68B0A /* CoreGraphics.framework in Frameworks */,
+				1BC56987B86B3716CA99B38B /* Foundation.framework in Frameworks */,
+				52AB42EF79E96E8F18E6B418 /* QuartzCore.framework in Frameworks */,
+				C59C1542ACB14E18D2957C8F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51497D928AEDFE24B673F0DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7081CF2FA3EAEBBBB10F5486 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758D151273DF266E29755930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B315CFDAE9D7EE114731B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C17A8F2BB71E3C36456E0344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1AC12998AC5B54D7AF43C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		007D012F17874D0DD35C44DC /* Pods-Countdown */ = {
+			isa = PBXGroup;
+			children = (
+				4D0CAA159938A446221093E8 /* Pods-Countdown-acknowledgements.markdown */,
+				9E70FC8A8968598418F136ED /* Pods-Countdown-acknowledgements.plist */,
+				6E6DD341B230082C555CDFAA /* Pods-Countdown-dummy.m */,
+				6FF0AAE7ED0490DB18970AD0 /* Pods-Countdown-environment.h */,
+				425D8904FF10670B283347FD /* Pods-Countdown-resources.sh */,
+				E43C74B414CAE576877F9894 /* Pods-Countdown.debug.xcconfig */,
+				9D831BCA14933B4A0695F6AB /* Pods-Countdown.release.xcconfig */,
+			);
+			name = "Pods-Countdown";
+			path = "Target Support Files/Pods-Countdown";
+			sourceTree = "<group>";
+		};
+		18D1F6D8D54D11F059650BA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3668BB341996CC7021FBF8C6 /* ChameleonFramework */,
+				4AEAC3F2132FFA05F7E03B3F /* DateTools */,
+				C3B6B7BCF96A06B4408967D8 /* LPlaceholderTextView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1C710D9E45E1DDCF32A312A7 = {
+			isa = PBXGroup;
+			children = (
+				27557523320F8A75207A5E70 /* Podfile */,
+				A57569C87FB1AE1C5E42A7B2 /* Frameworks */,
+				18D1F6D8D54D11F059650BA8 /* Pods */,
+				CD871979F8069DAAD4D7B1C2 /* Products */,
+				F956337B441AA3513324A4AF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		3668BB341996CC7021FBF8C6 /* ChameleonFramework */ = {
+			isa = PBXGroup;
+			children = (
+				36DB87ADC10B697D29E1B5D3 /* Default */,
+				68373C64E38E89CAFBCEC6B8 /* Support Files */,
+			);
+			path = ChameleonFramework;
+			sourceTree = "<group>";
+		};
+		36DB87ADC10B697D29E1B5D3 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				97158E44409B5DF0DFEEB407 /* Chameleon.h */,
+				9B521E019F9784D60EEABAA8 /* ChameleonMacros.h */,
+				51DBA145589789C1AF55D2D8 /* ChameleonStatusBar.h */,
+				BD0FF2832C86EBB2D7C824AE /* ChameleonStatusBar.m */,
+				DCA8E093E25ECE91A06D5E92 /* NSArray+Chameleon.h */,
+				959EF9E164D28E0D3E4EF639 /* NSArray+Chameleon.m */,
+				E347F8C57B478447F3851412 /* UIColor+CIELAB.h */,
+				175F8FA26BBC90936F00EBE4 /* UIColor+CIELAB.m */,
+				327EB2591DCAC41E48850F2E /* UIColor+Chameleon.h */,
+				0CF73322D6DA9E5F765D161B /* UIColor+Chameleon.m */,
+				1C3B9A6C57779C124CD9E448 /* UIViewController+Chameleon.h */,
+				B462DFB92F0504484A41573D /* UIViewController+Chameleon.m */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		40E5A1773D569CDDA69C5CFE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6504AD1B2C2DCA19038A2E33 /* Pods-Countdown-LPlaceholderTextView.xcconfig */,
+				8A05DCAD7EDB735A873E0D35 /* Pods-Countdown-LPlaceholderTextView-Private.xcconfig */,
+				2F3DDFD38BCC53C2A4F46F18 /* Pods-Countdown-LPlaceholderTextView-dummy.m */,
+				5319068CBC18954274BF9062 /* Pods-Countdown-LPlaceholderTextView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Countdown-LPlaceholderTextView";
+			sourceTree = "<group>";
+		};
+		4583C1E8B91C588D7A685652 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AEE7101F09AA183106A88631 /* CoreGraphics.framework */,
+				93D0DD304CAA00BDA772A815 /* Foundation.framework */,
+				D58F08DCD7921A18B1BB738A /* QuartzCore.framework */,
+				36A4D50E3DE157353FA8AF53 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4AEAC3F2132FFA05F7E03B3F /* DateTools */ = {
+			isa = PBXGroup;
+			children = (
+				AA338FA018F96A7248284EAD /* DTConstants.h */,
+				ED3AEF9FECCC52E31A9BD510 /* DTError.h */,
+				B0A6F161D9AB911E0CA3411C /* DTError.m */,
+				5466AF5167853C2473B0B52B /* DTTimePeriod.h */,
+				B2BD29132FC7DA6C328623BF /* DTTimePeriod.m */,
+				E2BCF7531B388848014AF260 /* DTTimePeriodChain.h */,
+				75250185D30E5558B3EFD133 /* DTTimePeriodChain.m */,
+				6740480262DFDE6D46CF3095 /* DTTimePeriodCollection.h */,
+				93A8DCC5F0671FBB5F53B119 /* DTTimePeriodCollection.m */,
+				5A0A5F7B25675A9F6A4E9EDA /* DTTimePeriodGroup.h */,
+				55CCB50D876E01655269CC36 /* DTTimePeriodGroup.m */,
+				89CE145D7FC1895FCBF19C4F /* DateTools.h */,
+				D1D04BD4C4C2316B97760A83 /* NSDate+DateTools.h */,
+				7B662BF630F785D4E949A0DD /* NSDate+DateTools.m */,
+				9C5BD29B0B6C117E81D9089A /* Resources */,
+				C4E90CB0B0F27F3D1954BD4E /* Support Files */,
+			);
+			path = DateTools;
+			sourceTree = "<group>";
+		};
+		68373C64E38E89CAFBCEC6B8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7463CCF9796BB717116D282 /* Pods-Countdown-ChameleonFramework.xcconfig */,
+				84E4088696A03C33A386E513 /* Pods-Countdown-ChameleonFramework-Private.xcconfig */,
+				E901A9A3CA45AF98DFAF57EA /* Pods-Countdown-ChameleonFramework-dummy.m */,
+				3F870B3D118B02C6252725BE /* Pods-Countdown-ChameleonFramework-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Countdown-ChameleonFramework";
+			sourceTree = "<group>";
+		};
+		9C5BD29B0B6C117E81D9089A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C83A56BE5DA3E6CAB0227A2D /* DateTools.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A57569C87FB1AE1C5E42A7B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4583C1E8B91C588D7A685652 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3B6B7BCF96A06B4408967D8 /* LPlaceholderTextView */ = {
+			isa = PBXGroup;
+			children = (
+				42B58751DCB5F6B0EC9EE78D /* LPlaceholderTextView.h */,
+				4BE1E1F76641038F6FDACC7A /* LPlaceholderTextView.m */,
+				40E5A1773D569CDDA69C5CFE /* Support Files */,
+			);
+			path = LPlaceholderTextView;
+			sourceTree = "<group>";
+		};
+		C4E90CB0B0F27F3D1954BD4E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5531C25A706751D2058E7900 /* Pods-Countdown-DateTools.xcconfig */,
+				870302D31D1AB83D83F858BD /* Pods-Countdown-DateTools-Private.xcconfig */,
+				C665466280406563ABF9A390 /* Pods-Countdown-DateTools-dummy.m */,
+				9BD7AAA0C7A4F6B3762DAA82 /* Pods-Countdown-DateTools-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Countdown-DateTools";
+			sourceTree = "<group>";
+		};
+		CD871979F8069DAAD4D7B1C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74198267176D305B25701183 /* libPods-Countdown.a */,
+				FED9F7A1EDA8318948A0EBDC /* libPods-Countdown-ChameleonFramework.a */,
+				18BC16437781897573D62078 /* libPods-Countdown-DateTools.a */,
+				FD5DB2184AC76150FD3BFA2B /* libPods-Countdown-LPlaceholderTextView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F956337B441AA3513324A4AF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				007D012F17874D0DD35C44DC /* Pods-Countdown */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		20E50CD2ECCE7495BECE0A55 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C8BDC4FF49B3AA3781AC990 /* Chameleon.h in Headers */,
+				D6D5A0F1CD228A02E166E19A /* ChameleonMacros.h in Headers */,
+				7C436CBAB220407D34D404E7 /* ChameleonStatusBar.h in Headers */,
+				C197A3F77CCC4A63560BD150 /* NSArray+Chameleon.h in Headers */,
+				AADDCBF75673539563356D94 /* UIColor+CIELAB.h in Headers */,
+				DE922605298063759E517161 /* UIColor+Chameleon.h in Headers */,
+				793F1A0B71A630D4C21F7D34 /* UIViewController+Chameleon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90760BF9610BE596FD1FCE74 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95D67DCF9775EC148AB600C6 /* DTConstants.h in Headers */,
+				9C7DA69A0983A65BF9E9E0D7 /* DTError.h in Headers */,
+				8C9385728483DC50DD540405 /* DTTimePeriod.h in Headers */,
+				4E5294F73149C86DD758F24C /* DTTimePeriodChain.h in Headers */,
+				E94F92F151B73AC073E5659B /* DTTimePeriodCollection.h in Headers */,
+				37913D2B2139968C650E71F5 /* DTTimePeriodGroup.h in Headers */,
+				67E737649B3CFEDF3F6A17AB /* DateTools.h in Headers */,
+				1C8980567AE61BC77E0DB474 /* NSDate+DateTools.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04953CEC5C5BB9128A3BAD8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CE1582297B402A3CFDE614D /* LPlaceholderTextView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		51DDE42369994B2F0D7C435C /* Pods-Countdown-ChameleonFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FECD45990E9A304665D62095 /* Build configuration list for PBXNativeTarget "Pods-Countdown-ChameleonFramework" */;
+			buildPhases = (
+				87E5ECA1ADAFE2389E2A9680 /* Sources */,
+				25B8B89ADA35103F65A0E4B0 /* Frameworks */,
+				20E50CD2ECCE7495BECE0A55 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Countdown-ChameleonFramework";
+			productName = "Pods-Countdown-ChameleonFramework";
+			productReference = FED9F7A1EDA8318948A0EBDC /* libPods-Countdown-ChameleonFramework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		59530DBD33B838FAC124C33B /* Pods-Countdown-LPlaceholderTextView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A386992D6BD83E0428776A7 /* Build configuration list for PBXNativeTarget "Pods-Countdown-LPlaceholderTextView" */;
+			buildPhases = (
+				794BFACDB591DE9FC455AD16 /* Sources */,
+				51497D928AEDFE24B673F0DF /* Frameworks */,
+				E04953CEC5C5BB9128A3BAD8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Countdown-LPlaceholderTextView";
+			productName = "Pods-Countdown-LPlaceholderTextView";
+			productReference = FD5DB2184AC76150FD3BFA2B /* libPods-Countdown-LPlaceholderTextView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8759945A4386F475EB4CF4DE /* Pods-Countdown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C71E97B7599583E78C1F5848 /* Build configuration list for PBXNativeTarget "Pods-Countdown" */;
+			buildPhases = (
+				FD615A51A24BAC4322198AFD /* Sources */,
+				C17A8F2BB71E3C36456E0344 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28BF649A2526026FA5DF4AA2 /* PBXTargetDependency */,
+				50A025178F26C8FA1D1B38DE /* PBXTargetDependency */,
+				526391F6D32E393C039506D3 /* PBXTargetDependency */,
+			);
+			name = "Pods-Countdown";
+			productName = "Pods-Countdown";
+			productReference = 74198267176D305B25701183 /* libPods-Countdown.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C2C6B4CFB3F0F288D71B9C0C /* Pods-Countdown-DateTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C3436E0B6B3E52F854D08F7 /* Build configuration list for PBXNativeTarget "Pods-Countdown-DateTools" */;
+			buildPhases = (
+				D0003B9DAA85B03B586C7AE8 /* Sources */,
+				758D151273DF266E29755930 /* Frameworks */,
+				90760BF9610BE596FD1FCE74 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Countdown-DateTools";
+			productName = "Pods-Countdown-DateTools";
+			productReference = 18BC16437781897573D62078 /* libPods-Countdown-DateTools.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10B8A554A778A10EC7F172A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = EBC1AFCBA8F0ADB425083187 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1C710D9E45E1DDCF32A312A7;
+			productRefGroup = CD871979F8069DAAD4D7B1C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8759945A4386F475EB4CF4DE /* Pods-Countdown */,
+				51DDE42369994B2F0D7C435C /* Pods-Countdown-ChameleonFramework */,
+				C2C6B4CFB3F0F288D71B9C0C /* Pods-Countdown-DateTools */,
+				59530DBD33B838FAC124C33B /* Pods-Countdown-LPlaceholderTextView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		794BFACDB591DE9FC455AD16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EBAB72258970177F8726442 /* LPlaceholderTextView.m in Sources */,
+				BCB8C01ACFF057BA06777B8E /* Pods-Countdown-LPlaceholderTextView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E5ECA1ADAFE2389E2A9680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				753963BCE16608EB5BC5E5E5 /* ChameleonStatusBar.m in Sources */,
+				81D234B7DCBC6F6CBD7C1B59 /* NSArray+Chameleon.m in Sources */,
+				F144BD72CB1398BDB9D2EE02 /* Pods-Countdown-ChameleonFramework-dummy.m in Sources */,
+				ED6BD986A6B417BEBFF758B3 /* UIColor+CIELAB.m in Sources */,
+				96451DA12AC7A414AB7D79CB /* UIColor+Chameleon.m in Sources */,
+				57E9D095C01118E8771C6582 /* UIViewController+Chameleon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0003B9DAA85B03B586C7AE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE41B9E35401F849A94F3461 /* DTError.m in Sources */,
+				28C217F5648634F2A606781F /* DTTimePeriod.m in Sources */,
+				56DA5B41D81ABA95AC143D20 /* DTTimePeriodChain.m in Sources */,
+				B3DBBD83E9321FD5FB8178AC /* DTTimePeriodCollection.m in Sources */,
+				A034B1007B246C89B05E79AA /* DTTimePeriodGroup.m in Sources */,
+				EA254FAEFCCBEE507FB30431 /* NSDate+DateTools.m in Sources */,
+				CB3CF83AD7697D930B7F2D05 /* Pods-Countdown-DateTools-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD615A51A24BAC4322198AFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5971ACFC97F6CB6BDFC3B260 /* Pods-Countdown-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28BF649A2526026FA5DF4AA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Countdown-ChameleonFramework";
+			target = 51DDE42369994B2F0D7C435C /* Pods-Countdown-ChameleonFramework */;
+			targetProxy = 7BBC462DB0FB6212BB2CFA6A /* PBXContainerItemProxy */;
+		};
+		50A025178F26C8FA1D1B38DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Countdown-DateTools";
+			target = C2C6B4CFB3F0F288D71B9C0C /* Pods-Countdown-DateTools */;
+			targetProxy = F3B4DD13B02506941DA2674C /* PBXContainerItemProxy */;
+		};
+		526391F6D32E393C039506D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Countdown-LPlaceholderTextView";
+			target = 59530DBD33B838FAC124C33B /* Pods-Countdown-LPlaceholderTextView */;
+			targetProxy = 24785E24A7337D8A5C7C93E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07C8F58C9E1D0D29013DEE80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D831BCA14933B4A0695F6AB /* Pods-Countdown.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2CA56BCBC7F11F92E5518DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A05DCAD7EDB735A873E0D35 /* Pods-Countdown-LPlaceholderTextView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Countdown-LPlaceholderTextView/Pods-Countdown-LPlaceholderTextView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		406AC9EBB35FFA88830B0E52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E43C74B414CAE576877F9894 /* Pods-Countdown.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		763E9A02D4601C2C82532EBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 870302D31D1AB83D83F858BD /* Pods-Countdown-DateTools-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Countdown-DateTools/Pods-Countdown-DateTools-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		81D069D219A92785402BD268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E4088696A03C33A386E513 /* Pods-Countdown-ChameleonFramework-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Countdown-ChameleonFramework/Pods-Countdown-ChameleonFramework-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		84C0BF5A24DAD9A53AEC84FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E4088696A03C33A386E513 /* Pods-Countdown-ChameleonFramework-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Countdown-ChameleonFramework/Pods-Countdown-ChameleonFramework-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9CF0549A9EBEE02B6EE8BBA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE1D3D08CD2BB04529EB7846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 870302D31D1AB83D83F858BD /* Pods-Countdown-DateTools-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Countdown-DateTools/Pods-Countdown-DateTools-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B81005923D161DB0D3EA4833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A05DCAD7EDB735A873E0D35 /* Pods-Countdown-LPlaceholderTextView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Countdown-LPlaceholderTextView/Pods-Countdown-LPlaceholderTextView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D44745AA84820DC5F0BEF839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C3436E0B6B3E52F854D08F7 /* Build configuration list for PBXNativeTarget "Pods-Countdown-DateTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE1D3D08CD2BB04529EB7846 /* Debug */,
+				763E9A02D4601C2C82532EBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A386992D6BD83E0428776A7 /* Build configuration list for PBXNativeTarget "Pods-Countdown-LPlaceholderTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B81005923D161DB0D3EA4833 /* Debug */,
+				2CA56BCBC7F11F92E5518DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C71E97B7599583E78C1F5848 /* Build configuration list for PBXNativeTarget "Pods-Countdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				406AC9EBB35FFA88830B0E52 /* Debug */,
+				07C8F58C9E1D0D29013DEE80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBC1AFCBA8F0ADB425083187 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44745AA84820DC5F0BEF839 /* Debug */,
+				9CF0549A9EBEE02B6EE8BBA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FECD45990E9A304665D62095 /* Build configuration list for PBXNativeTarget "Pods-Countdown-ChameleonFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C0BF5A24DAD9A53AEC84FF /* Debug */,
+				81D069D219A92785402BD268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10B8A554A778A10EC7F172A7 /* Project object */;
+}

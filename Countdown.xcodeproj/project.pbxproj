@@ -15,6 +15,13 @@
 		7584485E1AF1C3840063EBBF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7584485D1AF1C3840063EBBF /* Images.xcassets */; };
 		758448611AF1C3840063EBBF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7584485F1AF1C3840063EBBF /* LaunchScreen.xib */; };
 		7584486D1AF1C3840063EBBF /* CountdownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7584486C1AF1C3840063EBBF /* CountdownTests.m */; };
+		75D2C2E71D3577F6009C42CF /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75D2C2E11D3577F6009C42CF /* Icon-60@2x.png */; };
+		75D2C2E81D3577F6009C42CF /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75D2C2E21D3577F6009C42CF /* Icon-60@3x.png */; };
+		75D2C2E91D3577F6009C42CF /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75D2C2E31D3577F6009C42CF /* Icon-Small@2x.png */; };
+		75D2C2EA1D3577F6009C42CF /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75D2C2E41D3577F6009C42CF /* Icon-Small@3x.png */; };
+		75D2C2EB1D3577F6009C42CF /* Icon-Spotlight-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75D2C2E51D3577F6009C42CF /* Icon-Spotlight-40@2x.png */; };
+		75D2C2EC1D3577F6009C42CF /* Icon-Spotlight-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75D2C2E61D3577F6009C42CF /* Icon-Spotlight-40@3x.png */; };
+		75D2C2EE1D357854009C42CF /* CDClock.png in Resources */ = {isa = PBXBuildFile; fileRef = 75D2C2ED1D357854009C42CF /* CDClock.png */; };
 		75DCC4CC1AFA5E6100CD1238 /* ColorSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DCC4CB1AFA5E6100CD1238 /* ColorSelectionViewController.m */; };
 		75EDAB331AF2757B00516F9E /* DateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDAB321AF2757B00516F9E /* DateHandler.m */; };
 		75EDAB371AF27BE300516F9E /* AddCountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDAB351AF27BE300516F9E /* AddCountdownViewController.m */; };
@@ -28,11 +35,6 @@
 		75EDAB4C1AF30DC900516F9E /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75EDAB4A1AF30DC900516F9E /* SettingsViewController.xib */; };
 		75EDAB4F1AF310FC00516F9E /* gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75EDAB4D1AF310FC00516F9E /* gear@2x.png */; };
 		75EDAB501AF310FC00516F9E /* gear@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75EDAB4E1AF310FC00516F9E /* gear@3x.png */; };
-		75EDAB561AF31A6B00516F9E /* CDIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75EDAB511AF31A6B00516F9E /* CDIcon@2x.png */; };
-		75EDAB571AF31A6B00516F9E /* CDIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75EDAB521AF31A6B00516F9E /* CDIcon@3x.png */; };
-		75EDAB581AF31A6B00516F9E /* CDIcon58.png in Resources */ = {isa = PBXBuildFile; fileRef = 75EDAB531AF31A6B00516F9E /* CDIcon58.png */; };
-		75EDAB591AF31A6B00516F9E /* CDIcon80.png in Resources */ = {isa = PBXBuildFile; fileRef = 75EDAB541AF31A6B00516F9E /* CDIcon80.png */; };
-		75EDAB5A1AF31A6B00516F9E /* CDIcon87.png in Resources */ = {isa = PBXBuildFile; fileRef = 75EDAB551AF31A6B00516F9E /* CDIcon87.png */; };
 		90BEE0EB38757BCF0C6DCC46 /* libPods-Countdown.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A3976B9D7D6A941599C74A /* libPods-Countdown.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,13 @@
 		758448661AF1C3840063EBBF /* CountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7584486B1AF1C3840063EBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7584486C1AF1C3840063EBBF /* CountdownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountdownTests.m; sourceTree = "<group>"; };
+		75D2C2E11D3577F6009C42CF /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		75D2C2E21D3577F6009C42CF /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		75D2C2E31D3577F6009C42CF /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		75D2C2E41D3577F6009C42CF /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
+		75D2C2E51D3577F6009C42CF /* Icon-Spotlight-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-40@2x.png"; sourceTree = "<group>"; };
+		75D2C2E61D3577F6009C42CF /* Icon-Spotlight-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-40@3x.png"; sourceTree = "<group>"; };
+		75D2C2ED1D357854009C42CF /* CDClock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CDClock.png; sourceTree = "<group>"; };
 		75DCC4CA1AFA5E6100CD1238 /* ColorSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorSelectionViewController.h; sourceTree = "<group>"; };
 		75DCC4CB1AFA5E6100CD1238 /* ColorSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorSelectionViewController.m; sourceTree = "<group>"; };
 		75EDAB311AF2757B00516F9E /* DateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateHandler.h; sourceTree = "<group>"; };
@@ -83,11 +92,6 @@
 		75EDAB4A1AF30DC900516F9E /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		75EDAB4D1AF310FC00516F9E /* gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear@2x.png"; sourceTree = "<group>"; };
 		75EDAB4E1AF310FC00516F9E /* gear@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear@3x.png"; sourceTree = "<group>"; };
-		75EDAB511AF31A6B00516F9E /* CDIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CDIcon@2x.png"; sourceTree = "<group>"; };
-		75EDAB521AF31A6B00516F9E /* CDIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CDIcon@3x.png"; sourceTree = "<group>"; };
-		75EDAB531AF31A6B00516F9E /* CDIcon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CDIcon58.png; sourceTree = "<group>"; };
-		75EDAB541AF31A6B00516F9E /* CDIcon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CDIcon80.png; sourceTree = "<group>"; };
-		75EDAB551AF31A6B00516F9E /* CDIcon87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CDIcon87.png; sourceTree = "<group>"; };
 		B20007275641FD4894EB96EB /* Pods-Countdown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countdown.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Countdown/Pods-Countdown.debug.xcconfig"; sourceTree = "<group>"; };
 		D8A3976B9D7D6A941599C74A /* libPods-Countdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Countdown.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -170,13 +174,15 @@
 				75DCC4CB1AFA5E6100CD1238 /* ColorSelectionViewController.m */,
 				75EDAB4D1AF310FC00516F9E /* gear@2x.png */,
 				75EDAB4E1AF310FC00516F9E /* gear@3x.png */,
-				75EDAB511AF31A6B00516F9E /* CDIcon@2x.png */,
-				75EDAB521AF31A6B00516F9E /* CDIcon@3x.png */,
-				75EDAB531AF31A6B00516F9E /* CDIcon58.png */,
-				75EDAB541AF31A6B00516F9E /* CDIcon80.png */,
-				75EDAB551AF31A6B00516F9E /* CDIcon87.png */,
+				75D2C2E11D3577F6009C42CF /* Icon-60@2x.png */,
+				75D2C2E21D3577F6009C42CF /* Icon-60@3x.png */,
+				75D2C2E31D3577F6009C42CF /* Icon-Small@2x.png */,
+				75D2C2E41D3577F6009C42CF /* Icon-Small@3x.png */,
+				75D2C2E51D3577F6009C42CF /* Icon-Spotlight-40@2x.png */,
+				75D2C2E61D3577F6009C42CF /* Icon-Spotlight-40@3x.png */,
 				7584485D1AF1C3840063EBBF /* Images.xcassets */,
 				7584485F1AF1C3840063EBBF /* LaunchScreen.xib */,
+				75D2C2ED1D357854009C42CF /* CDClock.png */,
 				758448501AF1C3840063EBBF /* Supporting Files */,
 			);
 			path = Countdown;
@@ -299,20 +305,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75EDAB561AF31A6B00516F9E /* CDIcon@2x.png in Resources */,
+				75D2C2EB1D3577F6009C42CF /* Icon-Spotlight-40@2x.png in Resources */,
+				75D2C2EE1D357854009C42CF /* CDClock.png in Resources */,
+				75D2C2EC1D3577F6009C42CF /* Icon-Spotlight-40@3x.png in Resources */,
 				75EDAB501AF310FC00516F9E /* gear@3x.png in Resources */,
+				75D2C2EA1D3577F6009C42CF /* Icon-Small@3x.png in Resources */,
+				75D2C2E71D3577F6009C42CF /* Icon-60@2x.png in Resources */,
 				758448611AF1C3840063EBBF /* LaunchScreen.xib in Resources */,
 				75EDAB4F1AF310FC00516F9E /* gear@2x.png in Resources */,
 				75EDAB4C1AF30DC900516F9E /* SettingsViewController.xib in Resources */,
 				7584485E1AF1C3840063EBBF /* Images.xcassets in Resources */,
 				751C5AA11AF3D10C0078A871 /* EditCountdownViewController.xib in Resources */,
 				75EDAB441AF2EDDE00516F9E /* CountdownDetailViewController.xib in Resources */,
-				75EDAB5A1AF31A6B00516F9E /* CDIcon87.png in Resources */,
-				75EDAB591AF31A6B00516F9E /* CDIcon80.png in Resources */,
-				75EDAB581AF31A6B00516F9E /* CDIcon58.png in Resources */,
-				75EDAB571AF31A6B00516F9E /* CDIcon@3x.png in Resources */,
 				75EDAB3A1AF27E4B00516F9E /* AddCountdownViewController.xib in Resources */,
+				75D2C2E91D3577F6009C42CF /* Icon-Small@2x.png in Resources */,
 				75EDAB3F1AF2B6A400516F9E /* CountdownCell.xib in Resources */,
+				75D2C2E81D3577F6009C42CF /* Icon-60@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,7 +506,7 @@
 				INFOPLIST_FILE = Countdown/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "me.akeaswaran.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = me.akeaswaran.countr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -514,7 +522,7 @@
 				INFOPLIST_FILE = Countdown/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "me.akeaswaran.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = me.akeaswaran.countr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

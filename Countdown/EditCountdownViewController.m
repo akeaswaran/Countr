@@ -92,6 +92,7 @@
     [timePicker setDate:countdownDate animated:YES];
     
     [titleField setText:storedCountdown[@"title"]];
+    [locationField setText:storedCountdown[@"location"]];
     [descriptionTextView setPlaceholderText:@"Countdown Description"];
     [descriptionTextView setText:storedCountdown[@"description"]];
     

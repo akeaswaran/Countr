@@ -80,7 +80,9 @@
     [countdownLocationLabel setText:[NSString stringWithFormat:@"%@", dateDict[@"location"]]];
     [countdownTitleLabel sizeToFit];
     [countdownLocationLabel sizeToFit];
-    heightForTitle = 8 + countdownTitleLabel.frame.size.height + 5 + formattedDateLabel.frame.size.height + 5 + countdownLocationLabel.frame.size.height + 5 + 15;
+    [countdownCell layoutIfNeeded];
+    heightForTitle = countdownCell.frame.size.height;
+    //self.tableView.rowHeight = UITableViewAutomaticDimension;
     [self.tableView reloadData];
 }
 
